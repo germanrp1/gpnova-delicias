@@ -18,7 +18,7 @@ export function Footer() {
 
         <div className="mt-10 border-t border-border pt-6">
           <div className="flex flex-col sm:flex-row gap-4 sm:items-start">
-            <p className="text-[11px] leading-relaxed text-muted-foreground max-w-xl">
+            <p className="text-sm leading-relaxed text-muted-foreground max-w-2xl">
               <sup className="mr-0.5">1</sup>
               Cuota orientativa basada en una simulación de hipoteca bancaria.
               No constituye una oferta vinculante. Las condiciones reales
@@ -30,7 +30,7 @@ export function Footer() {
               loading="lazy"
               width={1318}
               height={1195}
-              className="w-full sm:w-64 rounded-lg border border-border"
+              className="w-full sm:w-[28rem] rounded-lg border border-border"
             />
           </div>
         </div>
