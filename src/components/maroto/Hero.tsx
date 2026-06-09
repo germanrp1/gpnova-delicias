@@ -41,7 +41,7 @@ export function Hero() {
         >
           Tu vivienda propia en Málaga
           <br />
-          <span className="italic font-bold text-7xl text-white font-serif">
+          <span className="italic text-7xl text-white font-serif font-light">
             por una cuota inferior a un alquiler1.
           </span>
         </motion.h1>
