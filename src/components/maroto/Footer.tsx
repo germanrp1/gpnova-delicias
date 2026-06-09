@@ -28,8 +28,8 @@ export function Footer() {
               src={mortgageSimulation}
               alt="Ejemplo de simulación de hipoteca bancaria"
               loading="lazy"
-              width={1536}
-              height={1024}
+              width={1318}
+              height={1195}
               className="w-full sm:w-64 rounded-lg border border-border"
             />
           </div>
