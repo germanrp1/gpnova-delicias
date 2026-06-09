@@ -40,8 +40,6 @@ export function Hero() {
           className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl"
         >
           Tu vivienda propia en Málaga por una cuota inferior a un alquiler.
-          <br />
-          por una cuota inferior a un alquiler.
         </motion.h1>
 
         <motion.p
