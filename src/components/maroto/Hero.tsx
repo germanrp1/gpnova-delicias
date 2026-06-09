@@ -37,12 +37,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
-          className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl text-left"
+          className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl"
         >
           Tu vivienda propia en Málaga
           <br />
           <span className="italic text-7xl text-white font-light font-sans">
-            por una cuota inferior a un alquiler.
+            por una cuota inferior a un alquiler1.
           </span>
         </motion.h1>
 
