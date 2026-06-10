@@ -1,3 +1,5 @@
+import { MortgageSimulator } from '@/components/maroto/MortgageSimulator';
+
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/maroto/Nav";
 import { Hero } from "@/components/maroto/Hero";
@@ -66,6 +68,7 @@ function Index() {
       <Location />
       <Contact />
       <Footer />
+      <MortgageSimulator />
     </main>
   );
 }
