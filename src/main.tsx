@@ -32,7 +32,9 @@ function App() {
         <MortgageSimulator />
       </div>
       <Contact />
-      <Footer />
+      <div id="nota-simulacion" className="scroll-mt-28">
+        <Footer />
+      </div>
     </main>
   );
 }

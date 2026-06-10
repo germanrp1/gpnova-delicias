@@ -40,7 +40,9 @@ export function Hero() {
           className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl"
         >
           Tu vivienda propia en Málaga por una cuota inferior a un alquiler
+          <a href="#nota-simulacion" className="hover:text-emerald-400 transition-colors cursor-pointer">
           <sup className="text-[0.4em] align-super font-light">1</sup>.
+          </a>
         </motion.h1>
 
         <motion.p
@@ -49,7 +51,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.55 }}
           className="mt-8 max-w-xl text-white/85 text-base sm:text-lg font-light leading-relaxed"
         >
-          Estudios completamente reformados y diseñados para aprovechar cada metro bueno.
+          Estudios completamente reformados y diseñados para aprovechar cada metro cuadrado.
         </motion.p>
 
         <motion.div
