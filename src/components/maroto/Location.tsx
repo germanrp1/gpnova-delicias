@@ -25,6 +25,12 @@ export function Location() {
               una demanda inmobiliaria sostenida durante todo el año.
             </p>
 
+            <h3 className="text-xl font-semibold mb-2">Ubicación del Proyecto</h3>
+            <p className="text-muted-foreground mb-8">
+              Calle Alcalde Nicolás Maroto, 11, 29014, Málaga Capital
+            </p>
+
+
             <div className="grid sm:grid-cols-2 gap-8">
               {perks.map((p) => (
                 <div key={p.label} className="flex flex-col gap-3">
@@ -46,11 +52,12 @@ export function Location() {
             className="lg:col-span-7"
           >
             <div className="relative aspect-[4/5] lg:aspect-square w-full overflow-hidden bg-background">
-              <iframe
-                title="Ubicación MAROTO en Málaga"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-4.4500%2C36.7050%2C-4.3950%2C36.7350&amp;layer=mapnik&amp;marker=36.7213%2C-4.4214"
-                className="absolute inset-0 h-full w-full grayscale contrast-110"
-                loading="lazy"
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.8211143327758!2d-4.418283701916013!3d36.74949857902123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f6361b23680d%3A0x8e64233e0eda8cea!2sC.%20Alcalde%20Nicol%C3%A1s%20Maroto%2C%2011%2C%20Cdad.%20Jard%C3%ADn%2C%2029014%20M%C3%A1laga!5e1!3m2!1ses!2ses!4v1781121373944!5m2!1ses!2ses" 
+                className="absolute inset-0 h-full w-full grayscale contrast-110 border-0"
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
               />
               <div className="absolute top-5 left-5 bg-background px-4 py-3 flex items-center gap-2">
                 <MapPin className="h-4 w-4" strokeWidth={1.5} />
