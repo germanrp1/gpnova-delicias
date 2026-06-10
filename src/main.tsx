@@ -12,6 +12,7 @@ import { BeforeAfter } from "./components/maroto/BeforeAfter";
 import { Features } from "./components/maroto/Features";
 import { LiveOrInvest } from "./components/maroto/LiveOrInvest";
 import { Location } from "./components/maroto/Location";
+import { MortgageSimulator } from "./components/maroto/MortgageSimulator";
 import { Contact } from "./components/maroto/Contact";
 import { Footer } from "./components/maroto/Footer";
 
@@ -27,6 +28,9 @@ function App() {
       <Features />
       <LiveOrInvest />
       <Location />
+      <div className="w-full bg-zinc-50 text-zinc-900">
+        <MortgageSimulator />
+      </div>
       <Contact />
       <Footer />
     </main>

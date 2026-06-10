@@ -66,10 +66,11 @@ function Index() {
       <LiveOrInvest />
       <Location />
       
-      {/* 🚀 Colocamos el simulador aquí: un sitio estratégico antes de que el cliente decida contactar */}
-      <div className="w-full bg-zinc-50 text-zinc-900">
+      {/* <div className="w-full bg-zinc-50 text-zinc-900"> */}
         <MortgageSimulator />
-      </div>
+      {/* </div> */}
+
+      <Features />
       
       <Contact />
       <Footer />
