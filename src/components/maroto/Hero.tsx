@@ -49,7 +49,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.55 }}
           className="mt-8 max-w-xl text-white/85 text-base sm:text-lg font-light leading-relaxed"
         >
-          Estudios completamente reformados y diseñados para aprovechar cada metro.
+          Estudios completamente reformados y diseñados para aprovechar cada metro nuevo.
         </motion.p>
 
         <motion.div
