@@ -1,5 +1,3 @@
-import { MortgageSimulator } from '@/components/maroto/MortgageSimulator';
-
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/maroto/Nav";
 import { Hero } from "@/components/maroto/Hero";
@@ -10,6 +8,7 @@ import { BeforeAfter } from "@/components/maroto/BeforeAfter";
 import { Features } from "@/components/maroto/Features";
 import { LiveOrInvest } from "@/components/maroto/LiveOrInvest";
 import { Location } from "@/components/maroto/Location";
+import { MortgageSimulator } from '@/components/maroto/MortgageSimulator'; // Importación limpia
 import { Contact } from "@/components/maroto/Contact";
 import { Footer } from "@/components/maroto/Footer";
 
@@ -66,9 +65,14 @@ function Index() {
       <Features />
       <LiveOrInvest />
       <Location />
+      
+      {/* 🚀 Colocamos el simulador aquí: un sitio estratégico antes de que el cliente decida contactar */}
+      <div className="w-full bg-zinc-50 text-zinc-900">
+        <MortgageSimulator />
+      </div>
+      
       <Contact />
       <Footer />
-      <MortgageSimulator />
     </main>
   );
 }
