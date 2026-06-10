@@ -64,6 +64,9 @@ export function Hero() {
           <a href="#estudios" className="btn-outline">
             Ver estudios
           </a>
+          <a href="#simulador" className="btn-outline">
+            Calcula tu cuota
+          </a>
         </motion.div>
       </div>
 
