@@ -7,7 +7,7 @@ const rent = [
   "La vivienda nunca será tuya",
 ];
 const own = [
-  "Cuota mensual similar",
+  "Cuota mensual inferior a un alquiler",
   "Construyes patrimonio",
   "La vivienda es tuya",
 ];
