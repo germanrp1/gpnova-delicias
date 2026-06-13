@@ -1,10 +1,12 @@
 import { motion } from "motion/react";
 import heroImg from "@/assets/hero-studio.jpg";
+// 🚀 Importamos tu render para el fondo del Hero
+import heroVideo from "@/assets/Render1.mp4";
 
 export function Hero() {
   return (
     <section id="top" className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
-      {/* Background video with image poster fallback. Replace src with final render video. */}
+      {/* Background video with image poster fallback. */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
         autoPlay
@@ -12,8 +14,8 @@ export function Hero() {
         loop
         playsInline
         poster={heroImg}
+        src={heroVideo} // 🎬 Aquí inyectamos el vídeo dinámico
       >
-        {/* TODO: añadir vídeo de fondo definitivo */}
       </video>
       {/* Fallback image always rendered behind video */}
       <img
@@ -21,7 +23,9 @@ export function Hero() {
         alt="Estudio MAROTO en Málaga"
         className="absolute inset-0 h-full w-full object-cover -z-10"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/65" />
+      
+      {/* Capa de transparencia oscura (overlay) para asegurar que el texto blanco se lea perfecto */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-black/70" />
 
       <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-32">
         <motion.p
