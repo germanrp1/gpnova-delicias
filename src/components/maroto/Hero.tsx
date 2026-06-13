@@ -1,30 +1,39 @@
 import { motion } from "motion/react";
 import heroImg from "@/assets/hero-studio.jpg";
-// 🚀 Importamos tu render para el fondo del Hero
 import heroVideo from "@/assets/Render1.mp4";
 
 export function Hero() {
+  // 🔍 Leemos los parámetros directamente desde la URL de forma nativa (JavaScript puro)
+  // Al no usar 'react-router-dom', eliminamos el error del <Router> para siempre.
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  // 🎛️ Si en la URL pones '?foto=1', la variable será FALSE (muestra foto).
+  // Si no pones nada, por defecto será TRUE (muestra vídeo).
+  const mostrarVideo = urlParams.get("foto") !== "1";
+
   return (
     <section id="top" className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
-      {/* Background video with image poster fallback. */}
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster={heroImg}
-        src={heroVideo} // 🎬 Aquí inyectamos el vídeo dinámico
-      >
-      </video>
-      {/* Fallback image always rendered behind video */}
-      <img
-        src={heroImg}
-        alt="Estudio MAROTO en Málaga"
-        className="absolute inset-0 h-full w-full object-cover -z-10"
-      />
       
-      {/* Capa de transparencia oscura (overlay) para asegurar que el texto blanco se lea perfecto */}
+      {/* 🎬 Renderizado dinámico del fondo */}
+      {mostrarVideo ? (
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={heroImg}
+          src={heroVideo}
+        />
+      ) : (
+        <img
+          src={heroImg}
+          alt="Estudio MAROTO en Málaga"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
+      
+      {/* Capa de transparencia oscura (overlay) */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-black/70" />
 
       <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-32">
@@ -45,7 +54,7 @@ export function Hero() {
         >
           Tu vivienda propia en Málaga por una cuota inferior a un alquiler
           <a href="#nota-simulacion" className="hover:text-emerald-400 transition-colors cursor-pointer">
-          <sup className="text-[0.4em] align-super font-light">1</sup>.
+            <sup className="text-[0.4em] align-super font-light">1</sup>.
           </a>
         </motion.h1>
 
