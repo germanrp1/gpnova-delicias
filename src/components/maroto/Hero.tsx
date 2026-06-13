@@ -3,12 +3,10 @@ import heroImg from "@/assets/hero-studio.jpg";
 import heroVideo from "@/assets/Render1.mp4";
 
 export function Hero() {
-  // 🔍 Leemos los parámetros directamente desde la URL de forma nativa (JavaScript puro)
-  // Al no usar 'react-router-dom', eliminamos el error del <Router> para siempre.
+  // 🔍 Leemos los parámetros directamente desde la URL de forma nativa
   const urlParams = new URLSearchParams(window.location.search);
   
-  // 🎛️ Si en la URL pones '?foto=1', la variable será FALSE (muestra foto).
-  // Si no pones nada, por defecto será TRUE (muestra vídeo).
+  // 🎛️ Si en la URL detecta '?foto=1', se apaga el vídeo
   const mostrarVideo = urlParams.get("foto") !== "1";
 
   return (
@@ -50,11 +48,15 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
-          className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl"
+          className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl leading-[1.15]"
         >
-          Tu vivienda propia en Málaga por una cuota inferior a un alquiler 
-          <a href="#nota-simulacion" className="hover:text-emerald-400 transition-colors cursor-pointer">
-            (calcula tu cuota)<sup className="text-[0.4em] align-super font-light">1</sup>.
+          Tu vivienda propia en Málaga por una cuota inferior a un alquiler
+          {/* 🔗 Enlace elegante integrado con espaciado y estilo sutil */}
+          <a 
+            href="#simulador" 
+            className="ml-4 inline-block text-xs sm:text-sm font-sans tracking-widest text-white/60 hover:text-emerald-400 underline underline-offset-4 decoration-emerald-500/50 hover:decoration-emerald-400 transition-all uppercase"
+          >
+            (Calcula tu cuota)
           </a>
         </motion.h1>
 
