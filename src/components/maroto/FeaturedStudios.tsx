@@ -24,7 +24,7 @@ const studios: Studio[] = [
     number: "01",
     title: "Estudio Uno",
     tagline: "La unidad estrella. Luz, amplitud y diseño optimizado.",
-    meters: "42 m²",
+    meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Sur",
     images: [
@@ -37,7 +37,7 @@ const studios: Studio[] = [
     number: "03",
     title: "Estudio Tres",
     tagline: "Espacio dormitorio integrado con cocina abierta y acabados premium.",
-    meters: "38 m²",
+    meters: "32 m²",
     rooms: "Dormitorio · Cocina · Baño",
     orientation: "Este",
     images: [
