@@ -4,7 +4,15 @@ import { ArrowUpRight, Play, X } from "lucide-react";
 
 // 📸 Usamos las imágenes y vídeos base que YA sabemos que existen en tu carpeta assets
 import fotoBase from "@/assets/hero-studio.jpg";
-import videoBase from "@/assets/Render1.mp4";
+import f1 from "@/assets/studio-1-a.jpg";
+import f2 from "@/assets/studio-1-b.jpg";
+import f3 from "@/assets/studio-3-a.jpg";
+import f4 from "@/assets/studio-3-b.jpg";
+//import videoBase from "@/assets/Render1.mp4";
+import v1 from "@/assets/Render1.mp4";
+import v2 from "@/assets/Render2.mp4";
+import v3 from "@/assets/Render3.mp4";
+import v4 from "@/assets/Render4.mp4";
 
 type Studio = {
   number: string;
@@ -26,8 +34,8 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Suroeste / Oeste",
-    images: [fotoBase, fotoBase],
-    video: videoBase,
+    images: [f1, f2],
+    video: v1,
   },
   {
     number: "02",
@@ -36,8 +44,8 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Suroeste",
-    images: [fotoBase, fotoBase],
-    video: videoBase,
+    images: [f2, f3],
+    video: v2,
   },
   {
     number: "03",
@@ -46,8 +54,8 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Suroeste",
-    images: [fotoBase, fotoBase],
-    video: videoBase,
+    images: [f3, f4],
+    video: v3,
   },
   {
     number: "04",
@@ -56,8 +64,8 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Sureste",
-    images: [fotoBase, fotoBase],
-    video: videoBase,
+    images: [f4, f1],
+    video: v4,
     badge: "Estudio Reservado",
   },
 ];
