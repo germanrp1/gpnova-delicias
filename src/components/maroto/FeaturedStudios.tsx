@@ -22,11 +22,11 @@ type Studio = {
 const studios: Studio[] = [
   {
     number: "01",
-    title: "Estudio Uno",
+    title: "Estudio Parque",
     tagline: "La unidad estrella. Luz, amplitud y diseño optimizado.",
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
-    orientation: "Sur",
+    orientation: "Suroeste",
     images: [
       { src: s1a, alt: "Salón del Estudio Uno" },
       { src: s1b, alt: "Baño del Estudio Uno" },
@@ -35,11 +35,11 @@ const studios: Studio[] = [
   },
   {
     number: "03",
-    title: "Estudio Tres",
+    title: "Estudio Plaza",
     tagline: "Espacio dormitorio integrado con cocina abierta y acabados premium.",
     meters: "32 m²",
     rooms: "Dormitorio · Cocina · Baño",
-    orientation: "Este",
+    orientation: "Suroeste",
     images: [
       { src: s3a, alt: "Dormitorio del Estudio Tres" },
       { src: s3b, alt: "Cocina del Estudio Tres" },
