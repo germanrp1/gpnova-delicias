@@ -31,7 +31,8 @@ export function Hero() {
         <img
           src={heroImg}
           alt="Estudio MAROTO en Málaga"
-          className="absolute inset-0 h-full w-full object-cover"
+          //className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-[65%_center] md:object-center"
         />
       )}
       

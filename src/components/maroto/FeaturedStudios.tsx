@@ -116,7 +116,8 @@ export function FeaturedStudios() {
                     src={s.images[0]}
                     alt={s.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105"
+                    //className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105"
+                    className="h-full w-full object-cover object-center md:object-center transition-transform duration-[1500ms] group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
                     <div className="bg-background/90 text-foreground p-4 rounded-full shadow-lg flex items-center gap-2 transform group-hover:scale-110 transition-transform duration-300">
@@ -136,7 +137,8 @@ export function FeaturedStudios() {
                     src={s.images[1]}
                     alt={s.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-[1500ms] hover:scale-105"
+                    //className="h-full w-full object-cover transition-transform duration-[1500ms] hover:scale-105"
+                    className="h-full w-full object-contain bg-white transition-transform duration-[1500ms] hover:scale-105"
                   />
                 </div>
               </div>
