@@ -32,13 +32,17 @@ export const MortgageSimulator = () => {
   return (
     <section id="simulador" className="py-16 bg-zinc-50 border-t border-zinc-200">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif text-zinc-900 mb-4">
+        {/* <div className="text-center mb-12"> */}
+        <div className="mb-12">
+          {/* <h2 className="text-3xl md:text-4xl font-serif text-zinc-900 mb-4"> */}
+          <h2 className="text-display text-4xl md:text-6xl text-zinc-900 mb-4 max-w-xl">
             {/* Simulador de Cuota Hipotecaria */}
             ¿Cuánto pagarías al mes?
           </h2>
-          <p className="text-zinc-600 max-w-xl mx-auto">
-            Calcula las condiciones de tu hipoteca en tiempo real y comprueba por qué es más inteligente comprar que alquilar en Málaga.
+          {/* <p className="text-zinc-600 max-w-xl mx-auto"> */}
+          <p className="text-zinc-600 max-w-xl">
+            {/* Calcula las condiciones de tu hipoteca en tiempo real y comprueba por qué es más inteligente comprar que alquilar en Málaga. */}
+            Descubre cómo una vivienda propia puede costarte menos que un alquiler
           </p>
         </div>
 
