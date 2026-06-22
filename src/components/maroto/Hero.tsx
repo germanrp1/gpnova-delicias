@@ -8,7 +8,10 @@ export function Hero() {
   const urlParams = new URLSearchParams(window.location.search);
   
   // 🎛️ Si en la URL detecta '?foto=1', se apaga el vídeo
-  const mostrarVideo = urlParams.get("foto") !== "1";
+  //const mostrarVideo = urlParams.get("foto") !== "1";
+  // Si entran limpio (maroto.gpnova.es), da FALSE y muestra la foto fija para máxima velocidad.
+  // Solo si añaden explícitamente '?video=1', dará TRUE y cargará el vídeo en bucle.
+  const mostrarVideo = urlParams.get("video") === "1";
 
   return (
     <section id="top" className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
