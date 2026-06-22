@@ -22,15 +22,15 @@ function App() {
       <Nav />
       <Hero />
       <RentVsOwn />
+      <div className="w-full bg-zinc-50 text-zinc-900">
+        <MortgageSimulator />
+      </div>
       <Project />
       <FeaturedStudios />
       <BeforeAfter />
       <Features />
       <LiveOrInvest />
       <Location />
-      <div className="w-full bg-zinc-50 text-zinc-900">
-        <MortgageSimulator />
-      </div>
       <Contact />
       <div id="nota-simulacion" className="scroll-mt-28">
         <Footer />

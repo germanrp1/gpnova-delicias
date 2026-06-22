@@ -34,7 +34,8 @@ export const MortgageSimulator = () => {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-zinc-900 mb-4">
-            Simulador de Cuota Hipotecaria
+            {/* Simulador de Cuota Hipotecaria */}
+            ¿Cuánto pagarías al mes?
           </h2>
           <p className="text-zinc-600 max-w-xl mx-auto">
             Calcula las condiciones de tu hipoteca en tiempo real y comprueba por qué es más inteligente comprar que alquilar en Málaga.
