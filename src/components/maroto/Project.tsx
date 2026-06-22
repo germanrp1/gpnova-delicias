@@ -54,7 +54,8 @@ export function Project() {
           transition={{ duration: 1 }}
           className="lg:col-span-7"
         >
-          <div className="relative aspect-[4/3] overflow-hidden">
+          {/* <div className="relative aspect-[4/3] overflow-hidden"> */}
+          <div className="relative aspect-[16/9] overflow-hidden">
             <img
               src={facade}
               alt="Fachada reformada del proyecto MAROTO en Málaga"
