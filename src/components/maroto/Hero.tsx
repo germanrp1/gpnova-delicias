@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import heroImg from "@/assets/hero-studio.jpg";
+//import heroImg from "@/assets/hero-studio.jpg";
+import heroImg from "@/assets/Cocina-Salón.png";
 import heroVideo from "@/assets/Render1.mp4";
 
 export function Hero() {
