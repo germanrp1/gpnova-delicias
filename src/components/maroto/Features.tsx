@@ -12,7 +12,7 @@ import {
 const features = [
   { icon: ChefHat, label: "Cocina equipada" },
   { icon: Bath, label: "Baño completo" },
-  { icon: Thermometer, label: "Climatización" },
+  { icon: Thermometer, label: "Preinstalación AA" },
   { icon: Sun, label: "Ventanas exteriores" },
   { icon: Hammer, label: "Reforma integral" },
   { icon: Ruler, label: "Diseño optimizado" },
