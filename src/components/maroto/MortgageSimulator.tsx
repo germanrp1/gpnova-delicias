@@ -31,7 +31,7 @@ export const MortgageSimulator = () => {
 
   return (
     // <section id="simulador" className="py-16 bg-zinc-50 border-t border-zinc-200">
-    <section id="simulador" className="py-16 bg-background border-t border-zinc-200">
+    <section id="simulador" className="py-16 bg-[#f8f7f5] border-t border-zinc-200">
       {/* <div className="max-w-4xl mx-auto px-4"> */}
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
@@ -52,7 +52,7 @@ export const MortgageSimulator = () => {
         
           <div className="lg:col-span-7">
 
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-2xl shadow-sm border border-zinc-100"> */}ç
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-2xl shadow-sm border border-zinc-100"> */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-background p-8 rounded-2xl shadow-sm border border-zinc-100">
               
               {/* COLUMNA DE ENTRADA DE DATOS */}
@@ -137,8 +137,7 @@ export const MortgageSimulator = () => {
                 <div className="mt-6">
                   <a 
                     href="#contacto" 
-                    // className="block text-center w-full bg-white text-zinc-900 font-medium py-3 rounded-lg hover:bg-zinc-100 transition-colors"
-                    className="block text-center w-full bg-background text-zinc-900 font-medium py-3 rounded-lg hover:bg-zinc-100 transition-colors"
+                    className="block text-center w-full bg-white text-zinc-900 font-medium py-3 rounded-lg hover:bg-zinc-100 transition-colors"                    
                   >
                     Solicitar más información
                   </a>
