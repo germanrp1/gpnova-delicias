@@ -59,7 +59,9 @@ export function Project() {
               src={facade}
               alt="Fachada reformada del proyecto MAROTO en Málaga"
               loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover"
+              //className="absolute inset-0 h-full w-full object-cover"
+              //className="absolute inset-0 h-full w-full object-cover object-[35%_center] md:object-[60%_center]"
+              className="absolute inset-0 h-full w-full object-cover object-[35%_center] "
             />
           </div>
         </motion.div>
