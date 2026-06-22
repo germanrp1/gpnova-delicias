@@ -4,8 +4,11 @@ import { ArrowUpRight, Play, X } from "lucide-react";
 
 // 📸 Usamos las imágenes y vídeos base que YA sabemos que existen en tu carpeta assets
 import fotoBase from "@/assets/hero-studio.jpg";
-import f1 from "@/assets/studio-1-a.jpg";
-import f2 from "@/assets/studio-1-b.jpg";
+//import f1 from "@/assets/studio-1-a.jpg";
+//import f2 from "@/assets/studio-1-b.jpg";
+import f1 from "@/assets/Salon-Cocina-Baño.png";
+import f2 from "@/assets/Baño Premium.png";
+
 import f3 from "@/assets/studio-3-a.jpg";
 import f4 from "@/assets/studio-3-b.jpg";
 //import videoBase from "@/assets/Render1.mp4";
