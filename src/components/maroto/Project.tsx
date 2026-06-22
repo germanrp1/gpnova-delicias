@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 //import facade from "@/assets/facade.jpg";
-import facade from "@/assets/Fachada.jpeg";
+import facade from "@/assets/Fachada-web2.jpg";
 
 export function Project() {
   return (
@@ -62,7 +62,8 @@ export function Project() {
               loading="lazy"
               //className="absolute inset-0 h-full w-full object-cover"
               //className="absolute inset-0 h-full w-full object-cover object-[35%_center] md:object-[60%_center]"
-              className="absolute inset-0 h-full w-full object-cover object-[20%_center]  md:object-[30%_center]"
+              //className="absolute inset-0 h-full w-full object-cover object-[20%_center]  md:object-[30%_center]"
+              className="absolute inset-0 h-full w-full object-cover object-[40%_center]"
             />
           </div>
         </motion.div>
