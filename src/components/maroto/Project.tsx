@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import facade from "@/assets/facade.jpg";
+//import facade from "@/assets/facade.jpg";
+import facade from "@/assets/Fachada.jpeg";
 
 export function Project() {
   return (
