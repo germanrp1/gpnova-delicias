@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "motion/react";
-import before from "@/assets/before.jpg";
-import after from "@/assets/after.jpg";
+import before from "@/assets/Salon-Cocina-Antes.jpeg";
+import after from "@/assets/Salon-Cocina-Despues.png";
 
 export function BeforeAfter() {
   const containerRef = useRef<HTMLDivElement>(null);
