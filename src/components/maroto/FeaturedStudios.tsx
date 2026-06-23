@@ -87,6 +87,10 @@ export function FeaturedStudios() {
             <h2 className="text-display text-4xl md:text-6xl max-w-2xl">
               Estudios destacados
             </h2>
+            {/* ✨ NOTA DE RECREACIÓN VIRTUAL INCORPORADA AQUÍ: */}
+            <p className="text-xs md:text-sm tracking-wide text-muted-foreground/80 mt-4 italic font-normal">
+              * Propuesta de amueblado y diseño mediante recreación virtual (IA).
+            </p>
           </div>
           <p className="text-muted-foreground max-w-sm">
             Cuatro espacios de diseño contemporáneo concebidos para aprovechar cada metro cuadrado, optimizar la luz natural y ofrecer la máxima rentabilidad y confort.
