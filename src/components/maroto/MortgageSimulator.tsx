@@ -39,6 +39,7 @@ export const MortgageSimulator = () => {
           {/* <div className="mb-12"> */}
           <div className="lg:col-span-5">
             {/* <h2 className="text-3xl md:text-4xl font-serif text-zinc-900 mb-4"> */}
+             <p className="eyebrow mb-4">01 — La decisión</p>
             <h2 className="text-display text-4xl md:text-6xl text-zinc-900 mb-4 max-w-xl">
               {/* Simulador de Cuota Hipotecaria */}
               ¿Cuánto pagarías al mes?

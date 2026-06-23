@@ -17,7 +17,7 @@ export function RentVsOwn() {
     <section className="relative py-28 md:py-40 bg-secondary">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-2xl mb-20">
-          <p className="eyebrow mb-4">02 — La decisión</p>
+          <p className="eyebrow mb-4">01 — La decisión</p>
           <h2 className="text-display text-4xl md:text-6xl">
             ¿Alquiler <span className="italic">o</span> propiedad?
           </h2>
