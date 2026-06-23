@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ArrowUpRight, Play, X, ZoomIn } from "lucide-react";
+import { ArrowUpRight, Play, X } from "lucide-react";
 
-// 📸 Imágenes y vídeos de tus assets
+// 📸 Usamos las imágenes y vídeos base que YA sabemos que existen en tu carpeta assets
 import fotoBase from "@/assets/hero-studio.jpg";
+//import f1 from "@/assets/studio-1-a.jpg";
+//import f2 from "@/assets/studio-1-b.jpg";
 import f1 from "@/assets/Salon-Cocina-Baño.png";
 import f2 from "@/assets/Baño Premium.png";
-import f3 from "@/assets/studio-3-a.jpg";
-import f4 from "@/assets/studio-3-b.jpg";
+
+import f3 from "@/assets/E2-Dormitorio-Cocina-Salón.png";
+import f4 from "@/assets/E2-Salón-Comedor-Cocina.png";
+//import videoBase from "@/assets/Render1.mp4";
 import v1 from "@/assets/Render1.mp4";
 import v2 from "@/assets/Render2.mp4";
 import v3 from "@/assets/Render3.mp4";
@@ -43,7 +47,7 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Suroeste",
-    images: [f2, f3],
+    images: [f3, f4],
     video: v2,
   },
   {
@@ -85,8 +89,9 @@ export function FeaturedStudios() {
             <h2 className="text-display text-4xl md:text-6xl max-w-2xl">
               Estudios destacados
             </h2>
+            {/* ✨ NOTA DE RECREACIÓN VIRTUAL INCORPORADA AQUÍ: */}
             <p className="text-xs md:text-sm tracking-wide text-muted-foreground/80 mt-4 italic font-normal">
-              * Propuesta de amueblado y diseño mediante recreación virtual.
+              * Propuesta de amueblado y diseño mediante recreación virtual (IA).
             </p>
           </div>
           <p className="text-muted-foreground max-w-sm">
@@ -109,23 +114,21 @@ export function FeaturedStudios() {
             >
               {/* Contenedor de imágenes */}
               <div className="lg:col-span-7 grid grid-cols-3 gap-3">
-                
-                {/* 🖼️ Imagen Principal (Grande) */}
                 <div 
                   className="col-span-2 aspect-[4/3] overflow-hidden relative cursor-pointer group"
-                  onClick={() => setActiveImage(s.images[0])} // Al hacer clic, se amplía
+                  onClick={() => setActiveVideo(s.video)}
                 >
                   <img
                     src={s.images[0]}
                     alt={s.title}
                     loading="lazy"
-                    className="h-full w-full object-cover object-center transition-transform duration-[1500ms] group-hover:scale-105"
+                    //className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105"
+                    className="h-full w-full object-cover object-center md:object-center transition-transform duration-[1500ms] group-hover:scale-105"
                   />
-                  {/* Capa flotante con icono de zoom */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-                    <div className="bg-background/90 text-foreground p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-2">
-                      <ZoomIn className="h-4 w-4" />
-                      <span className="text-[10px] font-semibold uppercase tracking-wider">Ampliar Foto</span>
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                    <div className="bg-background/90 text-foreground p-4 rounded-full shadow-lg flex items-center gap-2 transform group-hover:scale-110 transition-transform duration-300">
+                      <Play className="h-5 w-5 fill-current" />
+                      <span className="text-xs font-semibold uppercase tracking-wider pr-1 hidden sm:inline">Ver Render 3D</span>
                     </div>
                   </div>
                   {s.badge && (
@@ -135,23 +138,14 @@ export function FeaturedStudios() {
                   )}
                 </div>
 
-                {/* 🖼️ Imagen Secundaria (Vertical) */}
-                <div 
-                  className="aspect-[3/4] overflow-hidden relative cursor-pointer group"
-                  onClick={() => setActiveImage(s.images[1])} // Al hacer clic, se amplía
-                >
+                <div className="aspect-[3/4] overflow-hidden">
                   <img
                     src={s.images[1]}
                     alt={s.title}
                     loading="lazy"
-                    className="h-full w-full object-cover bg-white transition-transform duration-[1500ms] group-hover:scale-105"
+                    //className="h-full w-full object-cover transition-transform duration-[1500ms] hover:scale-105"
+                    className="h-full w-full object-contain bg-white transition-transform duration-[1500ms] hover:scale-105"
                   />
-                  {/* Capa flotante con icono de zoom */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-                    <div className="bg-background/90 text-foreground p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                      <ZoomIn className="h-4 w-4" />
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -204,40 +198,7 @@ export function FeaturedStudios() {
         </div>
       </div>
 
-      {/* 🔍 MODAL LIGHTBOX PARA IMÁGENES GRANDES */}
-      <AnimatePresence>
-        {activeImage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
-            onClick={() => setActiveImage(null)}
-          >
-            <button 
-              className="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-2 rounded-full transition-all z-50"
-              onClick={() => setActiveImage(null)}
-            >
-              <X className="h-6 w-6" />
-            </button>
-            <motion.div 
-              initial={{ scale: 0.95 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.95 }}
-              className="relative max-w-7xl max-h-[85vh] overflow-hidden rounded-lg shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <img 
-                src={activeImage} 
-                alt="Estudio ampliado" 
-                className="w-full h-full max-h-[85vh] object-contain rounded-lg"
-              />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Modal Lightbox para Vídeos */}
+      {/* Modal Lightbox */}
       <AnimatePresence>
         {activeVideo && (
           <motion.div
