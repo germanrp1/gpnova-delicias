@@ -9,8 +9,8 @@ import fotoBase from "@/assets/hero-studio.jpg";
 import f1 from "@/assets/Salon-Cocina-Baño.png";
 import f2 from "@/assets/Baño Premium.png";
 
-import f3 from "@/assets/studio-3-a.jpg";
-import f4 from "@/assets/studio-3-b.jpg";
+import f3 from "@/assets/E2-Dormitorio-Cocina-Salón.png";
+import f4 from "@/assets/E2-Salón-Comedor-Cocina.png";
 //import videoBase from "@/assets/Render1.mp4";
 import v1 from "@/assets/Render1.mp4";
 import v2 from "@/assets/Render2.mp4";
@@ -47,7 +47,7 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Suroeste",
-    images: [f2, f3],
+    images: [f3, f4],
     video: v2,
   },
   {
