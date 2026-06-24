@@ -102,8 +102,8 @@ export function Project() {
 
           </div>
 
-          <div className="max-w-5xl mx-auto">
-
+          <div className="max-w-4xl mx-auto">
+          
             <div className="overflow-hidden border border-border bg-background">
               <img
                 src={plano}
@@ -116,30 +116,30 @@ export function Project() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-center">
 
               <div>
-                <p className="text-2xl font-semibold">A</p>
+                <p className="text-2xl font-semibold">Estudio Horizonte</p>
                 <p className="text-sm text-muted-foreground">
-                  Exterior · 2 ventanas
+                  (A) · Esquina · 2 ventanas
                 </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">B</p>
+                <p className="text-2xl font-semibold">Estudio Océano</p>
                 <p className="text-sm text-muted-foreground">
-                  Exterior · 2 ventanas
+                  (B) · Fachada principal · 1 ventana
                 </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">C</p>
+                <p className="text-2xl font-semibold">Estudio Destino</p>
                 <p className="text-sm text-muted-foreground">
-                  Interior · 1 ventana
+                  (C) · Esquina · 2 ventanas
                 </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">D</p>
+                <p className="text-2xl font-semibold">Estudio Futuro</p>
                 <p className="text-sm text-muted-foreground">
-                  Interior · 1 ventana
+                  (D) · Fachada principal · 1 ventana
                 </p>
               </div>
 
