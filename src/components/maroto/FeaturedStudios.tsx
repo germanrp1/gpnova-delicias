@@ -196,7 +196,7 @@ export function FeaturedStudios() {
                     className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.18em] font-medium text-muted-foreground hover:text-foreground border-b border-transparent hover:border-foreground pb-2 transition-all self-start"
                   >
                     <Play className="h-4 w-4" />
-                    Reproducir Recorrido
+                    Reproducir Vídeo RENDER
                   </button>
                 </div>
               </div>
