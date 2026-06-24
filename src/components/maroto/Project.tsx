@@ -107,11 +107,21 @@ export function Project() {
             <div className="overflow-hidden border border-border bg-background">
               <img
                 src={plano}
-                alt="Plano general de distribución de los cuatro estudios"
-                loading="lazy"
-                className="w-full h-auto"
+                alt="Plano general"
+                className="w-full h-auto cursor-zoom-in transition-transform duration-300 hover:scale-[1.01]"
+                onClick={() => {
+                  setSelectedImage(plano);
+                  setSelectedTitle("Plano general de distribución");
+                }}
+              />
+              <Search
+                className="absolute top-4 right-4 h-5 w-5 text-muted-foreground bg-background/80 p-1 rounded-full"
               />
             </div>
+
+            <p className="text-xs text-muted-foreground text-center mt-3">
+              Plano general de distribución · Clic para ampliar
+            </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-center">
 
