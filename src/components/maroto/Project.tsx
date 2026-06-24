@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import facade from "@/assets/Fachada-web2.jpg";
 import plano from "@/assets/plano-general.jpg";
+import { ZoomIn } from "lucide-react";
 
 export function Project() {
   return (

@@ -13,6 +13,7 @@ import v2 from "@/assets/Render2.mp4";
 import v3 from "@/assets/Render3.mp4";
 import v4 from "@/assets/Render4.mp4";
 
+
 type Studio = {
   number: string;
   title: string;
