@@ -116,28 +116,28 @@ export function Project() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-center">
 
               <div>
-                <p className="text-2xl font-semibold">Estudio Horizonte</p>
+                <p className="text-2xl font-semibold">Estudio Parque</p>
                 <p className="text-sm text-muted-foreground">
                   (A) · Esquina · 2 ventanas
                 </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">Estudio Océano</p>
+                <p className="text-2xl font-semibold">Estudio Mirador</p>
                 <p className="text-sm text-muted-foreground">
                   (B) · Fachada principal · 1 ventana
                 </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">Estudio Destino</p>
+                <p className="text-2xl font-semibold">Estudio Plaza</p>
                 <p className="text-sm text-muted-foreground">
                   (C) · Esquina · 2 ventanas
                 </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">Estudio Futuro</p>
+                <p className="text-2xl font-semibold">Estudio Refugio</p>
                 <p className="text-sm text-muted-foreground">
                   (D) · Fachada principal · 1 ventana
                 </p>
