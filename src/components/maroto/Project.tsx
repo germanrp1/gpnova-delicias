@@ -115,7 +115,7 @@ export function Project() {
                   setSelectedTitle("Plano general de distribución");
                 }}
               />
-              <Search
+              <ZoomIn 
                 className="absolute top-4 right-4 h-5 w-5 text-muted-foreground bg-background/80 p-1 rounded-full"
               />
             </div>
