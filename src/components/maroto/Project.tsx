@@ -1,9 +1,11 @@
-import { motion } from "motion/react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import facade from "@/assets/Fachada-web2.jpg";
 import plano from "@/assets/plano-general.jpg";
-import { ZoomIn } from "lucide-react";
+import { ZoomIn, X } from "lucide-react";
 
 export function Project() {
+  const [activeImage, setActiveImage] = useState<string | null>(null);
   return (
     <section id="proyecto" className="py-28 md:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -105,18 +107,16 @@ export function Project() {
 
           <div className="max-w-4xl mx-auto">
           
-            <div className="overflow-hidden border border-border bg-background">
+            <div className="relative overflow-hidden border border-border bg-background">
               <img
                 src={plano}
                 alt="Plano general"
                 className="w-full h-auto cursor-zoom-in transition-transform duration-300 hover:scale-[1.01]"
-                onClick={() => {
-                  setSelectedImage(plano);
-                  setSelectedTitle("Plano general de distribución");
-                }}
+                onClick={() => setActiveImage(plano)}
               />
-              <ZoomIn 
-                className="absolute top-4 right-4 h-5 w-5 text-muted-foreground bg-background/80 p-1 rounded-full"
+              <ZoomIn
+                onClick={() => setActiveImage(plano)}
+                className="absolute top-4 right-4 h-5 w-5 text-muted-foreground bg-background/80 p-1 rounded-full cursor-pointer"
               />
             </div>
 
@@ -161,6 +161,39 @@ export function Project() {
         </motion.div>
 
       </div>
+      <AnimatePresence>
+        {activeImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 md:p-12"
+            onClick={() => setActiveImage(null)}
+          >
+            <button
+              className="absolute top-6 right-6 text-white bg-white/10 p-2 rounded-full"
+              onClick={() => setActiveImage(null)}
+            >
+              <X className="h-6 w-6" />
+            </button>
+
+            <motion.div
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.95 }}
+              // className="max-w-7xl max-h-[90vh]"
+              className="max-w-[95vw] max-h-[95vh]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={activeImage}
+                alt="Plano ampliado"
+                className="max-w-[95vw] max-h-[95vh] object-contain"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
