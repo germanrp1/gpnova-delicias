@@ -52,7 +52,7 @@ export function Location() {
             className="lg:col-span-7"
           >
             {/* <div className="relative -aspect-[16/9] w-full overflow-hidden bg-background"> */}
-            <div className="relative h-[420px] w-full overflow-hidden bg-background"
+            <div className="relative h-[420px] w-full overflow-hidden bg-background">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.8211143327758!2d-4.418283701916013!3d36.74949857902123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f6361b23680d%3A0x8e64233e0eda8cea!2sC.%20Alcalde%20Nicol%C3%A1s%20Maroto%2C%2011%2C%20Cdad.%20Jard%C3%ADn%2C%2029014%20M%C3%A1laga!5e1!3m2!1ses!2ses!4v1781121373944!5m2!1ses!2ses" 
                 className="absolute inset-0 h-full w-full border-0"
