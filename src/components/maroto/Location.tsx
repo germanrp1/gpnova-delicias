@@ -60,7 +60,7 @@ export function Location() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
               
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 to-transparent pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-secondary/0 to-transparent pointer-events-none" /> */}
 
               <div className="absolute top-5 left-5 bg-background px-4 py-3 flex items-center gap-2">
                 <MapPin className="h-4 w-4" strokeWidth={1.5} />
