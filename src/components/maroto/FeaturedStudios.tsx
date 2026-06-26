@@ -11,7 +11,7 @@ import f4 from "@/assets/E2-Salon-Comedor-Cocina.png";
 import f5 from "@/assets/Estudio 3-Salón-Cocina-Dormitorio.png";
 import f6 from "@/assets/Estudio3-Dormitorio.png";
 import f7 from "@/assets/E4-Dormitorio-Salon.png";
-import f8 from "@/assets/E2-Salon-Comedor-Cocina.png";
+import f8 from "@/assets/E4-Salon-Cocina.png";
 import v1 from "@/assets/Render1.mp4";
 import v2 from "@/assets/Render2.mp4";
 import v3 from "@/assets/Render3.mp4";
