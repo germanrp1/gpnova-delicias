@@ -6,8 +6,12 @@ import { ArrowUpRight, Play, X, ZoomIn } from "lucide-react";
 import fotoBase from "@/assets/hero-studio.jpg";
 import f1 from "@/assets/Salon-Cocina-Baño.png";
 import f2 from "@/assets/Baño Premium.png";
-import f3 from "@/assets/E2-Dormitorio-Cocina-Salon.png?v=2";
-import f4 from "@/assets/E2-Salon-Comedor-Cocina.png?v=2";
+import f3 from "@/assets/E2-Dormitorio-Cocina-Salon.png";
+import f4 from "@/assets/E2-Salon-Comedor-Cocina.png";
+import f5 from "@/assets/Estudio 3-Salón-Cocina-Dormitorio.png";
+import f6 from "@/assets/Estudio3-Dormitorio.png";
+import f7 from "@/assets/E4-Dormitorio-Salon.png";
+import f8 from "@/assets/E2-Salon-Comedor-Cocina.png";
 import v1 from "@/assets/Render1.mp4";
 import v2 from "@/assets/Render2.mp4";
 import v3 from "@/assets/Render3.mp4";
@@ -54,7 +58,7 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Suroeste",
-    images: [f3, f4],
+    images: [f5, f6],
     video: v3,
   },
   {
@@ -64,7 +68,7 @@ const studios: Studio[] = [
     meters: "32 m²",
     rooms: "Salón · Cocina · Baño",
     orientation: "Sureste",
-    images: [f4, f1],
+    images: [f7, f8],
     video: v4,
     badge: "Estudio Reservado",
   },
