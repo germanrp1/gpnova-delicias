@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { project } from "@/data/project.config";
 
 const links = [
   { href: "#proyecto", label: "Proyecto" },
@@ -33,7 +34,7 @@ export function Nav() {
             scrolled ? "text-foreground" : "text-white"
           }`}
         >
-          MAROTO
+          {project.name}
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (

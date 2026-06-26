@@ -1,16 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Nav } from "@/components/maroto/Nav";
-import { Hero } from "@/components/maroto/Hero";
-import { RentVsOwn } from "@/components/maroto/RentVsOwn";
-import { Project } from "@/components/maroto/Project";
-import { FeaturedStudios } from "@/components/maroto/FeaturedStudios";
-import { BeforeAfter } from "@/components/maroto/BeforeAfter";
-import { Features } from "@/components/maroto/Features";
-import { LiveOrInvest } from "@/components/maroto/LiveOrInvest";
-import { Location } from "@/components/maroto/Location";
-import { MortgageSimulator } from '@/components/maroto/MortgageSimulator'; // Importación limpia
-import { Contact } from "@/components/maroto/Contact";
-import { Footer } from "@/components/maroto/Footer";
+import { Nav } from "@/components/landing/Nav";
+import { Hero } from "@/components/landing/Hero";
+import { RentVsOwn } from "@/components/landing/RentVsOwn";
+import { Project } from "@/components/landing/Project";
+import { FeaturedStudios } from "@/components/landing/FeaturedStudios";
+import { BeforeAfter } from "@/components/landing/BeforeAfter";
+import { Features } from "@/components/landing/Features";
+import { LiveOrInvest } from "@/components/landing/LiveOrInvest";
+import { Location } from "@/components/landing/Location";
+import { MortgageSimulator } from '@/components/landing/MortgageSimulator'; // Importación limpia
+import { Contact } from "@/components/landing/Contact";
+import { Footer } from "@/components/landing/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({

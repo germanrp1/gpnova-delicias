@@ -1,9 +1,15 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { MessageCircle, ArrowRight } from "lucide-react";
+import { project } from "@/data/project.config";
 
-const WHATSAPP_NUMBER = "34671984202"; // TODO: reemplazar por número real
-const WEB3FORMS_KEY = "04f7354b-dc8b-4c84-8e00-3a25c2123231"; // 🔑 Pega aquí la clave que recibas de web3forms.com
+//const WHATSAPP_NUMBER = "34671984202"; // TODO: reemplazar por número real
+//const WEB3FORMS_KEY = "04f7354b-dc8b-4c84-8e00-3a25c2123231"; // 🔑 Pega aquí la clave que recibas de web3forms.com
+
+//access_key: project.web3formsKey;
+//access_key: import.meta.env.VITE_WEB3FORMS_KEY;
+
+
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -24,9 +30,12 @@ export function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          from_name: "Web MAROTO - Nuevo Lead",
-          subject: `Nuevo interesado: ${form.name}`,
+          //access_key: WEB3FORMS_KEY,
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          from_name: `${project.name} - Nuevo Lead`,
+          subject: `${project.enquirySubject} Nuevo interesado: ${form.name}`,
+          project: project.name,
+          url: window.location.href,
           name: form.name,
           email: form.email,
           phone: form.phone,
@@ -50,8 +59,8 @@ export function Contact() {
     setSent(true);
   };
 
-  const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    "Hola, me interesa el proyecto MAROTO en Málaga. ¿Pueden enviarme información?",
+  const whatsappHref = `https://wa.me/${project.contact.whatsapp}?text=${encodeURIComponent(
+    project.whatsappMessage
   )}`;
 
   return (
