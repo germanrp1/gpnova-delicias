@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, Play, X, ZoomIn } from "lucide-react";
+import { project } from "@/data/project.config";
 
 // 📸 Imágenes y vídeos de tus assets
 import fotoBase from "@/assets/hero-studio.jpg";
@@ -133,11 +134,24 @@ export function FeaturedStudios() {
                       <span className="text-[10px] font-semibold uppercase tracking-wider">Ampliar Foto</span>
                     </div>
                   </div>
-                  {s.badge && (
+                  {/* {s.badge && (
                     <span className="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded">
                       {s.badge}
                     </span>
+                  )} */}
+
+                  {s.badge ? (
+                    <span className="absolute top-3 left-3 z-20 bg-emerald-700 text-white text-[10px] font-bold uppercase tracking-[0.18em] px-3 py-1.5 rounded-full shadow-md">
+                      {s.badge}
+                    </span>
+                  ) : (
+                    project.images?.showVirtualStagingLabel && (
+                      <div className="absolute top-3 left-3 z-20 bg-white/85 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] tracking-[0.18em] uppercase text-neutral-700 font-medium shadow-sm">
+                        {project.images.virtualStagingLabel}
+                      </div>
+                    )
                   )}
+
                 </div>
 
                 {/* 🖼️ Imagen Secundaria (Vertical) */}

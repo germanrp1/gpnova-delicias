@@ -41,6 +41,12 @@ export const project = {
     includeUrl: true,
   },
 
+  images: {
+    showVirtualStagingLabel: true,
+    virtualStagingLabel: "HOME STAGING VIRTUAL",
+    virtualStagingNote:
+      "Home staging virtual realizado sobre fotografías reales de la vivienda.",
+  },
   //enquirySubject: "[LAS DELICIAS]",
 
   whatsappMessage:
@@ -52,14 +58,3 @@ export const project = {
   }
 
 }
-
-// <input
-//   type="hidden"
-//   name="project"
-//   value={project.name}
-// />
-// <input
-//   type="hidden"
-//   name="url"
-//   value={window.location.href}
-// />

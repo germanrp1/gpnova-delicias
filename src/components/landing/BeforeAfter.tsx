@@ -27,7 +27,7 @@ export function BeforeAfter() {
             <span className="italic">paso a paso.</span>
           </h2>
           <p className="mt-6 text-muted-foreground text-lg">
-            Arrastra el control para descubrir el resultado final.
+            Arrastra el control para descubrir el posible resultado final que te sugerimos.
           </p>
         </div>
 
