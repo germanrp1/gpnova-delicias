@@ -92,7 +92,7 @@ export function FeaturedStudios() {
               Estudios destacados
             </h2>
             <p className="text-xs md:text-sm tracking-wide text-muted-foreground/80 mt-4 italic font-normal">
-              * Propuesta de amueblado y diseño mediante recreación virtual.
+              <strong>* {project.images.virtualStagingNote}</strong>
             </p>
           </div>
           <p className="text-muted-foreground max-w-sm">
