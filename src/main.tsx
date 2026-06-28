@@ -16,6 +16,25 @@ import { MortgageSimulator } from "./components/landing/MortgageSimulator";
 import { Contact } from "./components/landing/Contact";
 import { Footer } from "./components/landing/Footer";
 
+// Ahora centralizamos todo el SEO, para que desde el projecto.config.ts lo cambiemos para cada operación
+//  Nueva de GP NOVA
+import { project as projectConfig } from "@/data/project.config";
+// Renombro el objeto de configuración project (con p minúscula) como projectConfig
+//    para no confundirlo con el objeto React Project (con P mayúscula)
+document.title = projectConfig.seo.seoTitle;
+const setMeta = (name: string, content: string) => {
+  let meta = document.querySelector(`meta[name="${name}"]`);
+
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.setAttribute("name", name);
+    document.head.appendChild(meta);
+  }
+
+  meta.setAttribute("content", content);
+};
+setMeta("description", projectConfig.seo.seoDescription);
+
 function App() {
   return (
     <main className="bg-background text-foreground">

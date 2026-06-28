@@ -35,20 +35,20 @@ export const project = {
   },
 
   web3forms: {
-    //accessKey: "...",
+    accessKey: "04f7354b-dc8b-4c84-8e00-3a25c2123231",
     subjectPrefix: "[LAS DELICIAS]",
     includeProject: true,
     includeUrl: true,
   },
 
-  enquirySubject: "[LAS DELICIAS]",
+  //enquirySubject: "[LAS DELICIAS]",
 
   whatsappMessage:
     "Hola, me interesa el proyecto Las Delicias en Málaga. ¿Podrían enviarme información?",
 
   seo: {
-    seoTitle: "...",
-    seoDescription: "...",
+    seoTitle: "Delicias Signature Homes | GP NOVA",
+    seoDescription: "Vivienda completamente reformada en Las Delicias (Málaga), lista para entrar a vivir.",
   }
 
 }
