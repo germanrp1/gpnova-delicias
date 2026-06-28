@@ -31,12 +31,19 @@ export function Contact() {
         },
         body: JSON.stringify({
           //access_key: WEB3FORMS_KEY,
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          from_name: `${project.name} - Nuevo Lead`,
-          subject: `${project.enquirySubject} Nuevo interesado: ${form.name}`,
-          project: project.name,
-          url: window.location.href,
-          name: form.name,
+          //access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          //access_key: import.meta.env.VITE_WEB3FORMS_KEY || project.web3formsKey,
+          access_key: project.web3forms.accessKey,
+          from_name: `${project.name} - Nueva Solicitud`,
+          subject: `${project.web3forms.subjectPrefix} Nuevo interesado: ${form.name}`,
+          //project: project.name,
+          //url: window.location.href,
+          ...(project.web3forms.includeProject && {
+            project: project.name,
+          }),
+          ...(project.web3forms.includeUrl && {
+            url: window.location.href,
+          }),          name: form.name,
           email: form.email,
           phone: form.phone,
           message: form.message,
@@ -56,7 +63,7 @@ export function Contact() {
       setLoading(false);
     }
     
-    setSent(true);
+    //setSent(true);
   };
 
   const whatsappHref = `https://wa.me/${project.contact.whatsapp}?text=${encodeURIComponent(

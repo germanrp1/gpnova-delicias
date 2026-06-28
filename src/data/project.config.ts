@@ -41,8 +41,6 @@ export const project = {
     includeUrl: true,
   },
 
-  web3formsKey: "04f7354b-dc8b-4c84-8e00-3a25c2123231",
-
   enquirySubject: "[LAS DELICIAS]",
 
   whatsappMessage:
