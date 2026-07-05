@@ -56,14 +56,21 @@ export const project = {
   },
 
   branding: {
-    primaryColor: "#4E6B45",
-    primaryLight: "#A6BE8D",
-    primaryDark: "#31452C",
-    accent: "#FFFFFF",
+    primaryColor: "#71844A",
+    primaryColorHover: "#60713F",
+    primaryColorLight: "#A6BC7A",
+    logoVariant: "colored",
+
+    primaryLight: "#8FA463",
+    primaryDark: "#556536",
+    accent: "#71844A",
+    signature: "#71844A",
+    logoTint: "#71844A",
+    
+    logoMarginTop: "mt-4",
     logo: "...",
     logoOffsetY: 12,
     navHeight: "h-20",
-    logoMarginTop: "mt-4",
   },
 
   simulator: {

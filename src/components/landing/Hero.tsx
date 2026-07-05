@@ -110,6 +110,17 @@ export function Hero() {
             {project.hero.buttons.simulator.label}
           </a>
         </motion.div>
+        
+        {/* Firma by Pablo & German */}
+        <p
+          className="text-center text-xl opacity-90"
+          style={{
+            color: project.branding.primaryColor,
+            fontFamily: "Allura",
+          }}
+        >
+          By Pablo Mastrorilli & Germán Rodríguez
+        </p>
       </div>
 
       {/* Scroll indicator */}
