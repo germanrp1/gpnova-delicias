@@ -51,7 +51,7 @@ export const project = {
     maxWidth: "4xl",
     titleSize: "6xl",
     overlayOpacity: 0.55,
-    eyebrowMargin: "mb-10",
+    eyebrowMargin: "mt-6 mb-10",
   },
 
   branding: {
