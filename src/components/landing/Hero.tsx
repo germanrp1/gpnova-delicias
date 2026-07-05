@@ -42,7 +42,8 @@ export function Hero() {
 
       {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-32"> */}
       {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-40 md:pt-32"> */}
-      <div className='relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 ${project.hero.heroPaddingTop}'>
+      {/* <div className={`relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 ${project.hero.heroPaddingTop}`}> */}
+      <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-between">
         {/* Hero Eyebrow */}
         {/* <motion.p
           initial={{ opacity: 0, y: 38 }}
@@ -89,9 +90,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.55 }}
           className="mt-8 max-w-xl text-white/85 text-base sm:text-lg font-light leading-relaxed"
         >
-          <p>
-            {project.hero.description}
-          </p>
+          {project.hero.description}          
         </motion.p>
 
         {/* Hero CTA Buttons */}
