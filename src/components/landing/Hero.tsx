@@ -53,8 +53,11 @@ export function Hero() {
         >
           {project.hero.eyebrow}
         </motion.p> */}
-        className="eyebrow text-white/80 mb-6" 
-        <p>{project.hero.eyebrow}</p>
+         
+        <p>
+          className="eyebrow text-white/80 mb-6" 
+          {project.hero.eyebrow}
+        </p>
 
         {/* Hero Title */}
         <motion.h1
