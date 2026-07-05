@@ -44,8 +44,8 @@ export function Hero() {
       <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-40 md:pt-32">
         {/* Hero Eyebrow */}
         <motion.p
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 38 }}
+          animate={{ opacity: 1, y: 18 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           // className="text-white/80 text-xs uppercase tracking-[0.32em] mb-6"
           className="eyebrow text-white/80 mb-6"          
