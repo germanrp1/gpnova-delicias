@@ -42,7 +42,7 @@ export function Hero() {
 
       {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-32"> */}
       {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-40 md:pt-32"> */}
-      <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 ${project.hero.heroPaddingTop}">
+      <div className='relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 ${project.hero.heroPaddingTop}'>
         {/* Hero Eyebrow */}
         <motion.p
           initial={{ opacity: 0, y: 38 }}

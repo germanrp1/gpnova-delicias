@@ -31,7 +31,7 @@ export function Nav() {
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 lg:px-10 h-16">
         <a
           href="#top"
-          className={`text-display text-2xl tracking-wider ${
+          className={`text-display text-2xl tracking-wider ${project.branding.logoMarginTop} ${
             scrolled ? "text-foreground" : "text-white"
           }`}
         >
