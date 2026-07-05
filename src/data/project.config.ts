@@ -52,6 +52,7 @@ export const project = {
     titleSize: "6xl",
     overlayOpacity: 0.55,
     eyebrowMargin: "mt-6 mb-10",
+    titleMarginTop: "mt-8",
   },
 
   branding: {
