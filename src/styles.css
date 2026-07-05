@@ -106,13 +106,21 @@
   line-height: 1;
 }
 
-@utility eyebrow {
+/* @utility eyebrow {
   font-family: var(--font-sans);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-muted-foreground);
+} */
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
 }
 
 @utility btn-primary {

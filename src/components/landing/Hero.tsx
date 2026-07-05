@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
 //import heroImg from "@/assets/hero-studio.jpg";
-import heroImg from "@/assets/Cocina-Salón.png";
+import heroImg from "@/assets/Salon-Cocina.jpeg";
 import heroVideo from "@/assets/Render1.mp4";
+import { project } from "@/data/project.config"; 
 
 export function Hero() {
   // 🔍 Leemos los parámetros directamente desde la URL de forma nativa
@@ -44,9 +45,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-white/80 text-xs uppercase tracking-[0.32em] mb-6"
+          // className="text-white/80 text-xs uppercase tracking-[0.32em] mb-6"
+          className="eyebrow text-white/80 mb-6"
+          
         >
-          Málaga capital · 4 estudios · Listos para entrar a vivir
+          {/* MÁLAGA · LAS DELICIAS · REFORMA INTEGRAL */}
+          {project.hero.eyebrow}
         </motion.p>
 
         <motion.h1
@@ -56,14 +60,19 @@ export function Hero() {
           //className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl leading-[1.15]"
           className="text-display text-white text-5xl sm:text-6xl lg:text-7xl max-w-4xl leading-[1.05]"
         >
-          Tu vivienda propia en Málaga por una cuota inferior a un alquiler
+          {/* ¿Buscas vivienda...
+          <p></p>
+          o una inversión rentable? */}
+          {project.hero.title.line1}
+          <br />
+          {project.hero.title.line2}
           {/* 🔗 Enlace elegante integrado con espaciado y estilo sutil */}
-          <a 
+          {/* <a 
             href="#simulador" 
             className="ml-4 inline-block text-xs sm:text-sm font-sans tracking-widest text-white/60 hover:text-emerald-400 underline underline-offset-4 decoration-emerald-500/50 hover:decoration-emerald-400 transition-all uppercase"
           >
             (Calcula tu cuota)
-          </a>
+          </a> */}
         </motion.h1>
 
         <motion.p
@@ -72,7 +81,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.55 }}
           className="mt-8 max-w-xl text-white/85 text-base sm:text-lg font-light leading-relaxed"
         >
-          Estudios completamente reformados y diseñados para aprovechar cada metro cuadrado.
+          <p>
+            {project.hero.description}
+          </p>
         </motion.p>
 
         <motion.div
@@ -82,13 +93,13 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a href="#contacto" className="btn-primary !bg-white !text-foreground hover:!bg-white/90">
-            Solicitar información
+            {project.hero.buttons.primary.label}
           </a>
           <a href="#estudios" className="btn-outline">
-            Ver estudios
+            {project.hero.buttons.secondary.label}
           </a>
           <a href="#simulador" className="btn-outline">
-            Calcula tu cuota
+            {project.hero.buttons.simulator.label}
           </a>
         </motion.div>
       </div>

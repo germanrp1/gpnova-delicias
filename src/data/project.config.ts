@@ -12,8 +12,42 @@ export const project = {
   subtitle:
     "Vivienda completamente reformada lista para entrar a vivir.",
 
+  hero: {
+    eyebrow: "Málaga · Las Delicias · Reforma integral",
+    title: {
+      line1: "¿Buscas vivienda...",
+      line2: "o una inversión rentable?"
+    },
+    description:
+      "La respuesta está aquí. Una vivienda completamente reformada, con 3 dormitorios (opción de 4), 2 baños y un diseño pensado tanto para disfrutarla en familia como para obtener una elevada rentabilidad mediante alquiler por habitaciones.",
+
+    primaryButton: "Solicitar información",
+    secondaryButton: "Ver la vivienda",
+    simulatorButton: "Calcula cuota / rentabilidad",
+
+    buttons: {
+      primary: {
+        label: "Solicitar información",
+        href: "#contacto",
+      },
+
+      secondary: {
+        label: "Ver la vivienda",
+        href: "#proyecto",
+      },
+
+      simulator: {
+        label: "Calcula cuota / rentabilidad",
+        href: "#simulador",
+      },
+    }
+  },
+
   branding: {
-    primaryColor: "#...",
+    primaryColor: "#4E6B45",
+    primaryLight: "#A6BE8D",
+    primaryDark: "#31452C",
+    accent: "#FFFFFF",
     logo: "...",
   },
 
