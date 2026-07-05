@@ -12,6 +12,12 @@ export const project = {
   subtitle:
     "Vivienda completamente reformada lista para entrar a vivir.",
 
+  navigation: [
+    { href: "#proyecto", label: "Proyecto" },
+    { href: "#vivienda", label: "Vivienda" },
+    { href: "#caracteristicas", label: "Características" },
+  ],
+  
   hero: {
     eyebrow: "Málaga · Las Delicias · Reforma integral",
     title: {
@@ -49,6 +55,7 @@ export const project = {
     primaryDark: "#31452C",
     accent: "#FFFFFF",
     logo: "...",
+    logoOffsetY: 12,
   },
 
   simulator: {

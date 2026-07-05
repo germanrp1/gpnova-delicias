@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { project } from "@/data/project.config";
 
-const links = [
-  { href: "#proyecto", label: "Proyecto" },
-  { href: "#estudios", label: "Estudios" },
-  { href: "#caracteristicas", label: "Características" },
-  { href: "#ubicacion", label: "Ubicación" },
-  { href: "#contacto", label: "Contacto" },
-];
+// const links = [
+//   { href: "#proyecto", label: "Proyecto" },
+//   { href: "#estudios", label: "Estudios" },
+//   { href: "#caracteristicas", label: "Características" },
+//   { href: "#ubicacion", label: "Ubicación" },
+//   { href: "#contacto", label: "Contacto" },
+// ];
+const links = project.navigation;
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
