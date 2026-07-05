@@ -51,6 +51,7 @@ export const project = {
     maxWidth: "4xl",
     titleSize: "6xl",
     overlayOpacity: 0.55,
+    eyebrowMargin: "mb-10",
   },
 
   branding: {
@@ -60,6 +61,8 @@ export const project = {
     accent: "#FFFFFF",
     logo: "...",
     logoOffsetY: 12,
+    navHeight: "h-20",
+    logoMarginTop: "mt-4",
   },
 
   simulator: {
