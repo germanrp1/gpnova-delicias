@@ -41,7 +41,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-black/70" />
 
       {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-32"> */}
-      <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-40 md:pt-32">
+      {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-40 md:pt-32"> */}
+      <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 ${project.hero.heroPaddingTop}">
         {/* Hero Eyebrow */}
         <motion.p
           initial={{ opacity: 0, y: 38 }}

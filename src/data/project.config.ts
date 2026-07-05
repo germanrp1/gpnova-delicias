@@ -46,7 +46,11 @@ export const project = {
         label: "Calcula cuota / rentabilidad",
         href: "#simulador",
       },
-    }
+    },
+    heroPaddingTop: "pt-[34px] md:pt-0",
+    maxWidth: "4xl",
+    titleSize: "6xl",
+    overlayOpacity: 0.55,
   },
 
   branding: {
