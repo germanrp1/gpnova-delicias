@@ -55,6 +55,7 @@ export function Hero() {
         </motion.p> */}
          
         <p className='eyebrow text-white/80 ${project.hero.eyebrowMargin}'>
+          <br></br>
           {project.hero.eyebrow}
         </p>
 
