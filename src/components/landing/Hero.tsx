@@ -44,16 +44,16 @@ export function Hero() {
       {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-40 md:pt-32"> */}
       <div className='relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 ${project.hero.heroPaddingTop}'>
         {/* Hero Eyebrow */}
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, y: 38 }}
           animate={{ opacity: 1, y: 18 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           // className="text-white/80 text-xs uppercase tracking-[0.32em] mb-6"
           className="eyebrow text-white/80 mb-6"          
         >
-          {/* MÁLAGA · LAS DELICIAS · REFORMA INTEGRAL */}
           {project.hero.eyebrow}
-        </motion.p>
+        </motion.p> */}
+        <p>{project.hero.eyebrow}</p>
 
         {/* Hero Title */}
         <motion.h1
