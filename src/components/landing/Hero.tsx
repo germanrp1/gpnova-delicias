@@ -40,19 +40,21 @@ export function Hero() {
       {/* Capa de transparencia oscura (overlay) */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-black/70" />
 
-      <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-32">
+      {/* <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-32"> */}
+      <div className="relative z-10 mx-auto max-w-7xl h-full px-6 lg:px-10 flex flex-col justify-end pb-20 pt-40 md:pt-32">
+        {/* Hero Eyebrow */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           // className="text-white/80 text-xs uppercase tracking-[0.32em] mb-6"
-          className="eyebrow text-white/80 mb-6"
-          
+          className="eyebrow text-white/80 mb-6"          
         >
           {/* MÁLAGA · LAS DELICIAS · REFORMA INTEGRAL */}
           {project.hero.eyebrow}
         </motion.p>
 
+        {/* Hero Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,6 +77,7 @@ export function Hero() {
           </a> */}
         </motion.h1>
 
+        {/* Hero Description */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,6 +89,7 @@ export function Hero() {
           </p>
         </motion.p>
 
+        {/* Hero CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
