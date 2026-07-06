@@ -124,10 +124,16 @@ export function Hero() {
         >
           {project.branding.signatureText}
         </p> */}
-        <Signature
+        {/* <Signature
           className="h-8 md:h-12"
           color={project.branding.primaryColor}
-        />
+        /> */}
+        <div className="-mt-6 md:mt-8 flex justify-center">
+          <Signature
+              className="h-10 md:h-12"
+              color={project.branding.primaryColor}
+          />
+        </div>
       </div>
 
       {/* Scroll indicator */}
