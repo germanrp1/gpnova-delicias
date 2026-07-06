@@ -67,8 +67,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
           //className="text-display text-white text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] max-w-5xl leading-[1.15]"
-          className="text-display text-white text-5xl sm:text-6xl lg:text-7xl max-w-4xl leading-[1.05]"
+          // className="text-display text-white text-5xl sm:text-6xl lg:text-7xl max-w-4xl leading-[1.05]"
           //className={`${project.hero.titleMarginTop} text-display text-white text-5xl sm:text-6xl lg:text-7xl max-w-4xl leading-[1.05]`}
+          className="text-display text-white text-[3.2rem] sm:text-6xl lg:text-7xl max-w-4xl leading-[1.05]"
         >
           {/* ¿Buscas vivienda...
           <p></p>
@@ -139,6 +140,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/70">
+      {/* <div className="absolute bottom-2 md:bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/70"> */}
         <span className="text-[10px] uppercase tracking-[0.3em]">Descubre</span>
         <div className="h-10 w-px bg-white/40" />
       </div>
