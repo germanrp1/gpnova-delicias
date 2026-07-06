@@ -125,7 +125,7 @@ export function Hero() {
           {project.branding.signatureText}
         </p> */}
         <Signature
-          className="h-12"
+          className="h-8 md:h-12"
           color={project.branding.primaryColor}
         />
       </div>
