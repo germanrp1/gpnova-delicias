@@ -100,7 +100,8 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          // className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-10 grid grid-cols-2 gap-4 md:flex md:flex-wrap md:items-center"
         >
           <a href="#contacto" className="btn-primary !bg-white !text-foreground hover:!bg-white/90">
             {project.hero.buttons.primary.label}

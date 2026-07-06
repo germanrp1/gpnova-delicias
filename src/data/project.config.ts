@@ -33,17 +33,19 @@ export const project = {
 
     buttons: {
       primary: {
-        label: "Solicitar información",
+        // label: "Solicitar información",
+        label: "Solicitar info",
         href: "#contacto",
       },
 
       secondary: {
-        label: "Ver la vivienda",
+        label: "Ver vivienda",
         href: "#proyecto",
       },
 
       simulator: {
-        label: "Calcula cuota / rentabilidad",
+        //label: "Calcula cuota / rentabilidad",
+        label: "Cuota/rentabilidad",
         href: "#simulador",
       },
     },
