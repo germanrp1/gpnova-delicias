@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import heroImg from "@/assets/Salon-Cocina.jpeg";
 import heroVideo from "@/assets/Render1.mp4";
 import { project } from "@/data/project.config"; 
+import { Signature } from "@/components/common/Signature";
 
 export function Hero() {
   // 🔍 Leemos los parámetros directamente desde la URL de forma nativa
@@ -112,15 +113,20 @@ export function Hero() {
         </motion.div>
         
         {/* Firma by Pablo & German */}
-        <p
-          className="text-center text-xl opacity-90"
+        {/* <p
+          className="text-center mt-8 text-3xl"
           style={{
-            color: project.branding.primaryColor,
-            fontFamily: "Allura",
+            color: project.branding.signatureColor,
+            fontFamily: project.branding.signatureFont,
+            fontSize: project.branding.signatureSize,
           }}
         >
-          By Pablo Mastrorilli & Germán Rodríguez
-        </p>
+          {project.branding.signatureText}
+        </p> */}
+        <Signature
+          className="h-12"
+          color={project.branding.primaryColor}
+        />
       </div>
 
       {/* Scroll indicator */}

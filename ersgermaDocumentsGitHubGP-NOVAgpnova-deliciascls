@@ -1,0 +1,7 @@
+ src/assets/branding/signature.svg       |  5 [32m+++++[m
+ src/components/common/Signature-Old.tsx | 25 [32m+++++++++++++++++++++++++[m
+ src/components/common/Signature.tsx     | 25 [32m+++++++++++++++++++++++++[m
+ src/components/landing/Hero.tsx         | 18 [32m++++++++++++[m[31m------[m
+ src/data/project.config.ts              | 20 [32m++++++++++++++[m[31m------[m
+ src/styles.css                          |  2 [32m+[m[31m-[m
+ 6 files changed, 82 insertions(+), 13 deletions(-)

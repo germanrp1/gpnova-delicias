@@ -56,17 +56,25 @@ export const project = {
   },
 
   branding: {
-    primaryColor: "#71844A",
-    primaryColorHover: "#60713F",
-    primaryColorLight: "#A6BC7A",
+    // primaryColor: "#869F57", Alternativa: #7D9650, Para MAROTO: #B8863B
+    primaryColor: "#869F57",
+    primaryColorHover: "#6F8647",
+    primaryColorLight: "#B9C991",
     logoVariant: "colored",
 
     primaryLight: "#8FA463",
     primaryDark: "#556536",
     accent: "#71844A",
-    signature: "#71844A",
-    logoTint: "#71844A",
-    
+    signatureColor: "#869F57",
+    logoColor: "#869F57",
+
+    signatureFont: '"Alex Brush", cursive',
+    signatureSize: "2rem",
+    signatureText: "By Pablo Mastrorilli & Germán Rodríguez",
+  
+
+    heroButtonStyle: "filled",
+
     logoMarginTop: "mt-4",
     logo: "...",
     logoOffsetY: 12,
