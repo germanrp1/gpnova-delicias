@@ -38,7 +38,7 @@ export function Nav() {
           }`}
         >
           <Logo
-            className="h-10 md:h-12 w-auto"
+            className="h-8 md:h-10 w-auto shrink-0"
             color={scrolled ? project.branding.logoColor : "#FFFFFF"}
             // color=#869F57
           />
