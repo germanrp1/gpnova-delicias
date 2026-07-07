@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { project } from "@/data/project.config";
+import { Logo } from "@/components/branding/Logo";
+
 
 // const links = [
 //   { href: "#proyecto", label: "Proyecto" },
@@ -31,11 +33,19 @@ export function Nav() {
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 lg:px-10 h-20 md:h-16">
         <a
           href="#top"
-          className={`text-display text-2xl tracking-wider ${project.branding.logoMarginTop} ${
+          className={`flex items-center gap-3 ${project.branding.logoMarginTop} ${
             scrolled ? "text-foreground" : "text-white"
           }`}
         >
-          {project.name}
+          <Logo
+            className="h-10 md:h-12 w-auto"
+            color={scrolled ? project.branding.logoColor : "#FFFFFF"}
+            // color=#869F57
+          />
+
+          <span className="text-display text-2xl tracking-wider">
+            {project.name}
+          </span>
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (

@@ -5,14 +5,15 @@ import "./styles.css";
 
 import { Nav } from "./components/landing/Nav";
 import { Hero } from "./components/landing/Hero";
-import { RentVsOwn } from "./components/landing/RentVsOwn";
+// import { RentVsOwn } from "./components/landing/RentVsOwn";
+import { BuyerModeSelector } from "./components/landing/BuyerModeSelector";
 import { Project } from "./components/landing/Project";
 import { FeaturedStudios } from "./components/landing/FeaturedStudios";
-import { BeforeAfter } from "./components/landing/BeforeAfter";
+import { Transformation } from "./components/landing/Transformation";
 import { Features } from "./components/landing/Features";
 import { LiveOrInvest } from "./components/landing/LiveOrInvest";
 import { Location } from "./components/landing/Location";
-import { MortgageSimulator } from "./components/landing/MortgageSimulator";
+import { SmartSimulator } from "./components/landing/SmartSimulator";
 import { Contact } from "./components/landing/Contact";
 import { Footer } from "./components/landing/Footer";
 
@@ -40,15 +41,15 @@ function App() {
     <main className="bg-background text-foreground">
       <Nav />
       <Hero />
-      <RentVsOwn />
-      <div className="w-full bg-zinc-50 text-zinc-900">
-        <MortgageSimulator />
-      </div>
-      <Project />
-      <FeaturedStudios />
-      <BeforeAfter />
-      <Features />
       <LiveOrInvest />
+      <BuyerModeSelector />
+      <div className="w-full bg-zinc-50 text-zinc-900">
+        <SmartSimulator />
+      </div>
+      <FeaturedStudios />
+      <Transformation />
+      <Features />
+      <Project />
       <Location />
       <Contact />
       <div id="nota-simulacion" className="scroll-mt-28">

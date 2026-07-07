@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const MortgageSimulator = () => {
+export const SmartSimulator = () => {
   // Valores iniciales por defecto acoplados al simulador del BDE
   const [precioVivienda, setPrecioVivienda] = useState(145000); 
   const [ahorrosIniciales, setAhorrosIniciales] = useState(0); 

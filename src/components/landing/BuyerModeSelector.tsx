@@ -12,7 +12,7 @@ const own = [
   "La vivienda es tuya",
 ];
 
-export function RentVsOwn() {
+export function BuyerModeSelector() {
   return (
     <section className="relative py-28 md:py-40 bg-secondary">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">

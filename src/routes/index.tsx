@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
-import { RentVsOwn } from "@/components/landing/RentVsOwn";
+import { RentVsOwn } from "@/components/landing/BuyerModeSelector";
 import { Project } from "@/components/landing/Project";
 import { FeaturedStudios } from "@/components/landing/FeaturedStudios";
-import { BeforeAfter } from "@/components/landing/BeforeAfter";
+import { BeforeAfter } from "@/components/landing/Transformation";
 import { Features } from "@/components/landing/Features";
 import { LiveOrInvest } from "@/components/landing/LiveOrInvest";
 import { Location } from "@/components/landing/Location";
-import { MortgageSimulator } from '@/components/landing/MortgageSimulator'; // Importación limpia
+import { MortgageSimulator } from '@/components/landing/SmartSimulator'; // Importación limpia
 import { Contact } from "@/components/landing/Contact";
 import { Footer } from "@/components/landing/Footer";
 

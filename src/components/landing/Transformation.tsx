@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import before from "@/assets/Salon-Cocina-Antes.jpeg";
 import after from "@/assets/Salon-Cocina-Despues.png";
 
-export function BeforeAfter() {
+export function Transformation() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState(50);
   const [dragging, setDragging] = useState(false);
