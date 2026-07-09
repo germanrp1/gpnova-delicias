@@ -63,6 +63,7 @@ export const project = {
     primaryColorHover: "#6F8647",
     primaryColorLight: "#B9C991",
     logoVariant: "colored",
+    activeCardColor: "#869F57",
 
     primaryLight: "#8FA463",
     primaryDark: "#556536",
@@ -85,13 +86,51 @@ export const project = {
 
   simulator: {
 
-    price: 310000,
-
+    purchasePrice: 295000,
     years: 30,
+    interest: 3.0,
+    savings: 0    
+  },
 
-    interest: 3.0
-    
+  investment: {
+    purchasePrice: 295000,
 
+    rooms: {
+        default: 3,
+        optional: 4
+    },
+
+    rent: {
+        min: 400,
+        max: 650,
+        default: 450,
+        step: 25
+    },
+
+    cta: "Solicitar estudio personalizado",
+  },
+
+  buyerMode: {
+    eyebrow: "01 — Personaliza tu experiencia",
+
+    title: "¿Cómo quieres descubrir esta vivienda?",
+
+    description:
+      "Selecciona el modo que mejor se adapte a ti. El simulador y parte del contenido se adaptarán automáticamente.",
+
+    living: {
+      title: "Quiero vivir aquí",
+
+      description:
+        "Descubre cuánto pagarías al mes, calcula tu cuota hipotecaria y comprueba por qué esta vivienda puede convertirse en tu próximo hogar.",
+    },
+
+    investing: {
+      title: "Quiero invertir aquí",
+
+      description:
+        "Calcula la rentabilidad potencial mediante alquiler por habitaciones y analiza distintos escenarios de inversión.",
+    },
   },
 
   contact: {

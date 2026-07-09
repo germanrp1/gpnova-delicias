@@ -75,7 +75,7 @@ const studios: Studio[] = [
   },
 ];
 
-export function FeaturedStudios() {
+export function Gallery() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   // ✨ Nuevo estado para controlar la imagen que se amplía
   const [activeImage, setActiveImage] = useState<string | null>(null);

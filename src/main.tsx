@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 
 import "./styles.css";
@@ -7,13 +8,15 @@ import { Nav } from "./components/landing/Nav";
 import { Hero } from "./components/landing/Hero";
 // import { RentVsOwn } from "./components/landing/RentVsOwn";
 import { BuyerModeSelector } from "./components/landing/BuyerModeSelector";
+import { SmartSimulator } from "./components/landing/SmartSimulator";
+import { MortgageCalculator } from "./components/landing/MortgageCalculator";
+import { ProfitCalculator } from "./components/landing/ProfitCalculator";
 import { Project } from "./components/landing/Project";
-import { FeaturedStudios } from "./components/landing/FeaturedStudios";
+import { Gallery } from "./components/landing/Gallery";
 import { Transformation } from "./components/landing/Transformation";
 import { Features } from "./components/landing/Features";
 import { LiveOrInvest } from "./components/landing/LiveOrInvest";
 import { Location } from "./components/landing/Location";
-import { SmartSimulator } from "./components/landing/SmartSimulator";
 import { Contact } from "./components/landing/Contact";
 import { Footer } from "./components/landing/Footer";
 
@@ -23,6 +26,7 @@ import { project as projectConfig } from "@/data/project.config";
 // Renombro el objeto de configuración project (con p minúscula) como projectConfig
 //    para no confundirlo con el objeto React Project (con P mayúscula)
 document.title = projectConfig.seo.seoTitle;
+
 const setMeta = (name: string, content: string) => {
   let meta = document.querySelector(`meta[name="${name}"]`);
 
@@ -37,19 +41,31 @@ const setMeta = (name: string, content: string) => {
 setMeta("description", projectConfig.seo.seoDescription);
 
 function App() {
+  
+  const [buyerMode, setBuyerMode] = useState<"living" | "investing">("living");
+  
+
   return (
     <main className="bg-background text-foreground">
       <Nav />
       <Hero />
-      <LiveOrInvest />
-      <BuyerModeSelector />
+      {/* <LiveOrInvest /> */}
+      <BuyerModeSelector
+        buyerMode={buyerMode}
+        setBuyerMode={setBuyerMode}
+      />
+      
       <div className="w-full bg-zinc-50 text-zinc-900">
-        <SmartSimulator />
+        <SmartSimulator
+          buyerMode={buyerMode}
+        />
       </div>
-      <FeaturedStudios />
+
+      <Project />
+      
+      <Gallery />
       <Transformation />
       <Features />
-      <Project />
       <Location />
       <Contact />
       <div id="nota-simulacion" className="scroll-mt-28">

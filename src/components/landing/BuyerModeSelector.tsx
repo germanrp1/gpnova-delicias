@@ -1,78 +1,122 @@
 import { motion } from "motion/react";
-import { Check, X } from "lucide-react";
+import { Home, TrendingUp } from "lucide-react";
+import { project } from "@/data/project.config";
 
-const rent = [
-  "Pagas todos los meses",
-  "No generas patrimonio",
-  "La vivienda nunca será tuya",
-];
-const own = [
-  "Cuota mensual inferior a un alquiler",
-  "Construyes patrimonio",
-  "La vivienda es tuya",
-];
+interface BuyerModeSelectorProps {
+  buyerMode: "living" | "investing";
+  setBuyerMode: React.Dispatch<
+    React.SetStateAction<"living" | "investing">
+  >;
+}
 
-export function BuyerModeSelector() {
+export function BuyerModeSelector({
+  buyerMode,
+  setBuyerMode,
+}: BuyerModeSelectorProps) {
   return (
-    <section className="relative py-28 md:py-40 bg-secondary">
+    <section className="relative py-20 md:py-28 bg-secondary">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="max-w-2xl mb-20">
-          <p className="eyebrow mb-4">01 — La decisión</p>
-          <h2 className="text-display text-4xl md:text-6xl">
-            ¿Alquiler <span className="italic">o</span> propiedad?
+
+        {/* Cabecera */}
+        <div className="max-w-3xl mb-16">
+
+          <p className="eyebrow mb-4">
+            {project.buyerMode.eyebrow}
+          </p>
+
+          <h2 className="text-display text-4xl md:text-6xl mb-6">
+            {project.buyerMode.title}
           </h2>
+
+          <p className="text-lg text-muted-foreground">
+            {project.buyerMode.description}
+          </p>
+
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-10">
-          {/* Alquiler */}
+        {/* Tarjetas */}
+        <div className="grid md:grid-cols-2 gap-8">
+
+          {/* MODO VIVIR */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="bg-background/60 border border-border p-10 lg:p-14"
+            transition={{ duration: 0.6 }}
+            onClick={() => setBuyerMode("living")}
+            className={`cursor-pointer rounded-2xl border p-10 transition-all duration-300 ${
+              buyerMode === "living"
+                ? "text-white shadow-xl"
+                : "bg-background border-border hover:border-zinc-400"
+            }`}
+            style={
+              buyerMode === "living"
+                ? {
+                    backgroundColor: project.branding.activeCardColor,
+                    borderColor: project.branding.activeCardColor,
+                  }
+                : {}
+            }
           >
-            <p className="eyebrow mb-8">Alquiler</p>
-            <ul className="space-y-5">
-              {rent.map((t) => (
-                <li key={t} className="flex items-start gap-4 text-lg text-muted-foreground">
-                  <X className="mt-1 h-5 w-5 shrink-0 opacity-50" strokeWidth={1.5} />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
+            <Home className="h-10 w-10 mb-8" />
+
+            <h3 className="text-3xl font-serif mb-4">
+              {project.buyerMode.living.title}
+            </h3>
+
+            <p
+              className={
+                buyerMode === "living"
+                  ? "text-zinc-300"
+                  : "text-muted-foreground"
+              }
+            >
+              {project.buyerMode.living.description}
+            </p>
+
           </motion.div>
 
-          {/* Propiedad */}
+          {/* MODO INVERSIÓN */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="bg-primary text-primary-foreground p-10 lg:p-14"
+            transition={{ duration: 0.6, delay: 0.15 }}
+            onClick={() => setBuyerMode("investing")}
+            className={`cursor-pointer rounded-2xl border p-10 transition-all duration-300 ${
+              buyerMode === "investing"
+                ? "text-white shadow-xl"
+                : "bg-background border-border hover:border-zinc-400"
+            }`}
+            style={
+              buyerMode === "investing"
+                ? {
+                    backgroundColor: project.branding.activeCardColor,
+                    borderColor: project.branding.activeCardColor,
+                  }
+                : {}
+            }
           >
-            <p className="eyebrow mb-8 !text-primary-foreground/60">Propiedad</p>
-            <ul className="space-y-5">
-              {own.map((t) => (
-                <li key={t} className="flex items-start gap-4 text-lg">
-                  <Check className="mt-1 h-5 w-5 shrink-0" strokeWidth={1.5} />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
+            <TrendingUp className="h-10 w-10 mb-8" />
+
+            <h3 className="text-3xl font-serif mb-4">
+              {project.buyerMode.investing.title}
+            </h3>
+
+            <p
+              className={
+                buyerMode === "investing"
+                  ? "text-zinc-300"
+                  : "text-muted-foreground"
+              }
+            >
+              {project.buyerMode.investing.description}
+            </p>
+
           </motion.div>
+
         </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-display text-3xl md:text-5xl mt-20 max-w-4xl"
-        >
-          Cada mensualidad puede acercarte a{" "}
-          <span className="italic">ser propietario.</span>
-        </motion.p>
       </div>
     </section>
   );
