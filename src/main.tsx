@@ -14,7 +14,7 @@ import { ProfitCalculator } from "./components/landing/ProfitCalculator";
 import { Project } from "./components/landing/Project";
 import { Gallery } from "./components/landing/Gallery";
 import { Transformation } from "./components/landing/Transformation";
-import { Features } from "./components/landing/Features";
+import { Highlights } from "./components/landing/Highlights";
 import { LiveOrInvest } from "./components/landing/LiveOrInvest";
 import { Location } from "./components/landing/Location";
 import { Contact } from "./components/landing/Contact";
@@ -65,7 +65,7 @@ function App() {
       
       <Gallery />
       <Transformation />
-      <Features />
+      <Highlights />
       <Location />
       <Contact />
       <div id="nota-simulacion" className="scroll-mt-28">

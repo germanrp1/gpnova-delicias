@@ -1,3 +1,14 @@
+import {
+  Bed,
+  Bath,
+  Users,
+  Hammer,
+  Zap,
+  Sofa,
+  Snowflake,
+  MapPin,
+} from "lucide-react";
+
 export const project = {
 
   id: "Delicias",
@@ -131,6 +142,102 @@ export const project = {
       description:
         "Calcula la rentabilidad potencial mediante alquiler por habitaciones y analiza distintos escenarios de inversión.",
     },
+  },
+
+  projectSection: {
+
+    eyebrow: "03 — LA VIVIENDA",
+
+    title: "Todo lo que esperas de una vivienda... y algo más.",
+
+    description:
+      "Esta vivienda ha sido completamente transformada mediante una reforma integral, renovando instalaciones, distribución y acabados para ofrecer un hogar moderno, funcional y preparado para muchos años. Cada decisión se ha tomado buscando el equilibrio entre diseño, comodidad y valor a largo plazo.",
+
+    buttons: {
+
+      primary: {
+        label: "Ver plano",
+        href: "#plano",
+      },
+
+      secondary: {
+        label: "Recorrido virtual",
+        href: "#galeria",
+      },
+
+    },
+
+  },
+
+  highlights: {
+
+    eyebrow: "06 — Lo que hace especial esta vivienda",
+
+    title: "Pensada para disfrutarla desde el primer día.",
+
+    description:
+      "Cada detalle de la reforma se ha diseñado para ofrecer comodidad, funcionalidad y valor a largo plazo.",
+
+    items: [
+
+      {
+        icon: Bed,
+        label: "3 dormitorios (+1)",
+        description:
+          "Posibilidad de crear un cuarto dormitorio fácilmente.",
+      },
+
+      {
+        icon: Bath,
+        label: "2 baños completos",
+        description:
+          "Mayor comodidad para familias o alquiler por habitaciones.",
+      },
+
+      {
+        icon: Hammer,
+        label: "Reforma integral",
+        description:
+          "Vivienda completamente renovada.",
+      },
+
+      {
+        icon: Zap,
+        label: "Instalaciones nuevas",
+        description:
+          "Electricidad y fontanería totalmente sustituidas.",
+      },
+
+      {
+        icon: Snowflake,
+        label: "Preinstalación A/A",
+        description:
+          "Preparada para climatización.",
+      },
+
+      {
+        icon: Sofa,
+        label: "Lista para estrenar",
+        description:
+          "Reforma completamente terminada.",
+      },
+
+      {
+        icon: Users,
+        label: "Ideal para alquiler por habitaciones",
+        description:
+          "Alta demanda de estudiantes y trabajadores.",
+      },
+
+      {
+        icon: MapPin,
+        label: "Las Delicias",
+        description:
+          "Excelente ubicación en Málaga.",
+      },
+
+    ],
+    
   },
 
   contact: {

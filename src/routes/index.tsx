@@ -5,7 +5,7 @@ import { RentVsOwn } from "@/components/landing/BuyerModeSelector";
 import { Project } from "@/components/landing/Project";
 import { FeaturedStudios } from "@/components/landing/Gallery";
 import { BeforeAfter } from "@/components/landing/Transformation";
-import { Features } from "@/components/landing/Features";
+import { Features } from "@/components/landing/Highlights";
 import { LiveOrInvest } from "@/components/landing/LiveOrInvest";
 import { Location } from "@/components/landing/Location";
 import { MortgageSimulator } from '@/components/landing/MortgageCalculator'; // Importación limpia
