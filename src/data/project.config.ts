@@ -7,6 +7,10 @@ import {
   Sofa,
   Snowflake,
   MapPin,
+
+  
+  Ruler,
+
 } from "lucide-react";
 
 export const project = {
@@ -157,30 +161,43 @@ export const project = {
       "Esta vivienda ha sido completamente transformada mediante una reforma integral, renovando instalaciones, distribución y acabados para ofrecer un hogar moderno, funcional y preparado para muchos años. Cada decisión se ha tomado buscando el equilibrio entre diseño, comodidad y valor a largo plazo.",
 
     specs: [
+
           {
-              label: "Superficie",
-              value: "76 m²"
+            icon: Ruler,
+            label: "Superficie",
+            value: "76 m²",
           },
+
           {
-              label: "Dormitorios",
-              value: "3 (+1)"
+            icon: Bed,
+            label: "Dormitorios",
+            value: "3 (+1)",
           },
+
           {
-              label: "Baños",
-              value: "2"
+            icon: Bath,
+            label: "Baños",
+            value: "2",
           },
+
           {
-              label: "Reforma",
-              value: "Integral"
+            icon: Hammer,
+            label: "Reforma",
+            value: "Integral",
           },
+
           {
-              label: "Instalaciones",
-              value: "Nuevas"
+            icon: Zap,
+            label: "Instalaciones",
+            value: "Nuevas",
           },
+
           {
-              label: "Climatización",
-              value: "Preinstalación A/A"
-          }
+            icon: Snowflake,
+            label: "A/A",
+            value: "Preinstalación",
+          },
+
       ],
 
       planImage: "",

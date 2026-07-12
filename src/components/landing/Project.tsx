@@ -5,7 +5,10 @@ import { project } from "@/data/project.config";
 //import fachada from "@/assets/Fachada.png";
 import fachada from "@/assets/Fachada_IA1.png";
 import plano from "@/assets/Plano-principal.png";
-import { ZoomIn, X } from "lucide-react";
+
+import {
+  ZoomIn, X
+} from "lucide-react";
 
 export function Project() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -36,20 +39,29 @@ export function Project() {
               {project.project.description}
             </p>
 
-            <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-6">
-              {project.project.specs.map((spec) => (
-                <div key={spec.label}>
-                  <p className="text-2xl font-serif text-zinc-900">
-                    {spec.value}
-                  </p>
+            <div className="mt-10 grid grid-cols-2 gap-x-10 gap-y-8">
 
-                  <p className="mt-1 text-xs uppercase tracking-[0.2em] text-zinc-500">
-                    {spec.label}
-                  </p>
-                </div>
-              ))}
+              {project.project.specs.map((spec) => {
+                const Icon = spec.icon;
+                return (
+                  <div key={spec.label}>
+                    <p className="font-serif text-3xl text-zinc-900 leading-none">
+                      {spec.value}
+                    </p>
+                    <div className="mt-2 flex items-center gap-2">
+                      <Icon
+                        size={15}
+                        strokeWidth={2.2}
+                        color={project.branding.primaryColor}
+                      />
+                      <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+                        {spec.label}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-
 
           </motion.div>
 
