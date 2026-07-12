@@ -3,7 +3,7 @@ import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
 import { RentVsOwn } from "@/components/landing/BuyerModeSelector";
 import { Project } from "@/components/landing/Project";
-import { FeaturedStudios } from "@/components/landing/Gallery";
+import { FeaturedStudios } from "@/components/landing/Gallery_Old";
 import { BeforeAfter } from "@/components/landing/Transformation";
 import { Features } from "@/components/landing/Highlights";
 import { LiveOrInvest } from "@/components/landing/LiveOrInvest";

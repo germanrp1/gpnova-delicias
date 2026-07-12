@@ -12,7 +12,7 @@ import { SmartSimulator } from "./components/landing/SmartSimulator";
 import { MortgageCalculator } from "./components/landing/MortgageCalculator";
 import { ProfitCalculator } from "./components/landing/ProfitCalculator";
 import { Project } from "./components/landing/Project";
-import { Gallery } from "./components/landing/Gallery";
+import { Gallery } from "./components/landing/Gallery_Old";
 import { Transformation } from "./components/landing/Transformation";
 import { Highlights } from "./components/landing/Highlights";
 import { LiveOrInvest } from "./components/landing/LiveOrInvest";
@@ -62,10 +62,11 @@ function App() {
       </div>
 
       <Project />
-      
+
+      <Highlights />
+
       <Gallery />
       <Transformation />
-      <Highlights />
       <Location />
       <Contact />
       <div id="nota-simulacion" className="scroll-mt-28">

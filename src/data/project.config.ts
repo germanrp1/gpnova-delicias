@@ -144,28 +144,47 @@ export const project = {
     },
   },
 
-  projectSection: {
+  project: {
 
     eyebrow: "03 — LA VIVIENDA",
 
-    title: "Todo lo que esperas de una vivienda... y algo más.",
+    title: [
+        "Una reforma integral",
+        "pensada para durar."
+    ],
 
     description:
       "Esta vivienda ha sido completamente transformada mediante una reforma integral, renovando instalaciones, distribución y acabados para ofrecer un hogar moderno, funcional y preparado para muchos años. Cada decisión se ha tomado buscando el equilibrio entre diseño, comodidad y valor a largo plazo.",
 
-    buttons: {
+    specs: [
+          {
+              label: "Superficie",
+              value: "76 m²"
+          },
+          {
+              label: "Dormitorios",
+              value: "3 (+1)"
+          },
+          {
+              label: "Baños",
+              value: "2"
+          },
+          {
+              label: "Reforma",
+              value: "Integral"
+          },
+          {
+              label: "Instalaciones",
+              value: "Nuevas"
+          },
+          {
+              label: "Climatización",
+              value: "Preinstalación A/A"
+          }
+      ],
 
-      primary: {
-        label: "Ver plano",
-        href: "#plano",
-      },
+      planImage: "",
 
-      secondary: {
-        label: "Recorrido virtual",
-        href: "#galeria",
-      },
-
-    },
 
   },
 

@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import facade from "@/assets/Fachada-web2.jpg";
-import plano from "@/assets/plano-general.jpg";
+import { project } from "@/data/project.config"; 
+
+//import fachada from "@/assets/Fachada.png";
+import fachada from "@/assets/Fachada_IA1.png";
+import plano from "@/assets/Plano-principal.png";
 import { ZoomIn, X } from "lucide-react";
 
 export function Project() {
@@ -19,44 +22,35 @@ export function Project() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-5"
+            className="lg:col-span-6"
           >
-            <p className="eyebrow mb-4">03 — El proyecto</p>
+            <p className="eyebrow mb-4"> {project.project.eyebrow} </p>
 
             <h2 className="text-display text-4xl md:text-6xl mb-8">
-              Cuatro estudios.
+              {project.project.title[0]}
               <br />
-              <span className="italic">Una nueva vida.</span>
+              <span className="italic">{project.project.title[1]}</span>
             </h2>
 
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-              Transformación integral de un local comercial en cuatro estudios
-              independientes diseñados para ofrecer comodidad, funcionalidad y
-              calidad.
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-md max-w-xl">
+              {project.project.description}
             </p>
 
-            <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
-              <div>
-                <p className="text-display text-4xl">04</p>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mt-2">
-                  Estudios
-                </p>
-              </div>
+            <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-6">
+              {project.project.specs.map((spec) => (
+                <div key={spec.label}>
+                  <p className="text-2xl font-serif text-zinc-900">
+                    {spec.value}
+                  </p>
 
-              <div>
-                <p className="text-display text-4xl">100%</p>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mt-2">
-                  Reformado
-                </p>
-              </div>
-
-              <div>
-                <p className="text-display text-4xl">2026</p>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mt-2">
-                  Entrega
-                </p>
-              </div>
+                  <p className="mt-1 text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    {spec.label}
+                  </p>
+                </div>
+              ))}
             </div>
+
+
           </motion.div>
 
           {/* FACHADA */}
@@ -65,14 +59,17 @@ export function Project() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="lg:col-span-7"
+            className="lg:col-span-6"
           >
-            <div className="relative aspect-[21/9] overflow-hidden">
+            {/* <div className="relative aspect-[21/9] overflow-hidden"> */}
+            <div className="overflow-hidden rounded-2xl border border-border">
               <img
-                src={facade}
-                alt="Fachada reformada del proyecto MAROTO en Málaga"
+                src={fachada}
+                alt="Plano principal de las Delicias"
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover object-[40%_center]"
+                onClick={() => setActiveImage(fachada)}
+                // className="absolute inset-0 h-full w-full object-contain object-[40%_center]"
+                className="w-full h-auto cursor-zoom-in hover:scale-[1.01]"
               />
             </div>
           </motion.div>
@@ -87,27 +84,22 @@ export function Project() {
           transition={{ duration: 0.8 }}
           className="mt-24"
         >
-          <div className="max-w-4xl mx-auto text-center mb-8">
-
-            <p className="eyebrow mb-3">
-              Distribución de las viviendas
-            </p>
-
-            <h3 className="text-3xl md:text-4xl mb-4">
-              Cuatro estudios diseñados para aprovechar cada metro cuadrado
-            </h3>
-
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Cada vivienda ha sido diseñada para combinar amplitud visual,
-              funcionalidad y confort, optimizando la distribución interior
-              y la entrada de luz natural.
-            </p>
-
-          </div>
 
           <div className="max-w-4xl mx-auto">
-          
-            <div className="relative overflow-hidden border border-border bg-background">
+
+            <p className="eyebrow text-center mb-4">
+                Plano de distribución - Pulsa para ampliar
+            </p>
+            {/* <p className="text-xs text-muted-foreground text-center mt-3">
+                Distribución optimizada
+                <br />
+                Cada estancia ha sido diseñada para aprovechar al máximo la superficie disponible.
+                <br />
+            </p> */}
+              <div className="relative overflow-hidden border border-border bg-background">
+            <p>
+                <br />
+            </p>
               <img
                 src={plano}
                 alt="Plano general"
@@ -120,41 +112,10 @@ export function Project() {
               />
             </div>
 
-            <p className="text-xs text-muted-foreground text-center mt-3">
-              Plano general de distribución · Clic para ampliar
-            </p>
+            {/* <p className="text-xs text-muted-foreground text-center mt-3">
+              Plano de distribución · Pulsa para ampliar
+            </p> */}
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-center">
-
-              <div>
-                <p className="text-2xl font-semibold">Estudio Parque</p>
-                <p className="text-sm text-muted-foreground">
-                  (A) · Esquina · 2 ventanas
-                </p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-semibold">Estudio Mirador</p>
-                <p className="text-sm text-muted-foreground">
-                  (B) · Fachada principal · 1 ventana
-                </p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-semibold">Estudio Plaza</p>
-                <p className="text-sm text-muted-foreground">
-                  (C) · Esquina · 2 ventanas
-                </p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-semibold">Estudio Refugio</p>
-                <p className="text-sm text-muted-foreground">
-                  (D) · Fachada principal · 1 ventana
-                </p>
-              </div>
-
-            </div>
 
           </div>
 

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "motion/react";
-import before from "@/assets/Salon-Cocina-Antes.jpeg";
-import after from "@/assets/Salon-Cocina-Despues.png";
+// import before from "@/assets/Salon-Cocina-Antes.jpeg";
+// import after from "@/assets/Salon-Cocina-Despues.png";
 
 export function Transformation() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -50,7 +50,7 @@ export function Transformation() {
         >
           {/* After (full) */}
           <img
-            src={after}
+            // src={after}
             alt="Después de la reforma"
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover"
@@ -61,7 +61,7 @@ export function Transformation() {
             style={{ width: `${pos}%` }}
           >
             <img
-              src={before}
+              // src={before}
               alt="Antes de la reforma"
               loading="lazy"
               className="absolute inset-0 h-full object-cover"
