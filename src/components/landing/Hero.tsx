@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 //import heroImg from "@/assets/hero-studio.jpg";
-import heroImg from "@/assets/gallery/Salon-Cocina.jpeg";
+import heroImg from "@/assets/gallery/Salon-CocinaIA.jpeg";
 // import heroVideo from "@/assets/Render1.mp4";
 import { project } from "@/data/project.config"; 
 import { Signature } from "@/components/branding/Signature";

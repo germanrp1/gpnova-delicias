@@ -66,11 +66,11 @@ function App() {
       <Highlights />
 
       <Gallery />
-      <Transformation />
+      {/* <Transformation /> */}
       <Location />
       <Contact />
       <div id="nota-simulacion" className="scroll-mt-28">
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </main>
   );
