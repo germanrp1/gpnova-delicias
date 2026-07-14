@@ -39,7 +39,7 @@ import Hab1 from "@/assets/gallery/Hab1.jpeg";
 import Hab1IA from "@/assets/gallery/Hab1IA.jpeg";
 
 import Hab2 from "@/assets/gallery/Hab2.jpeg";
-import Hab2IA from "@/assets/gallery/Hab2IA.jpeg";
+import Hab2IA from "@/assets/gallery/Hab2IA.png";
 
 import Hab3 from "@/assets/gallery/Hab3.png";
 import Hab3IA from "@/assets/gallery/Hab3IA.jpeg";
