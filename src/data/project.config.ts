@@ -72,8 +72,8 @@ export const project = {
     "Vivienda completamente reformada lista para entrar a vivir.",
 
   navigation: [
-    { href: "#proyecto", label: "Proyecto" },
-    { href: "#vivienda", label: "Vivienda" },
+    { href: "#proyecto", label: "La Vivienda" },
+    { href: "#galeria", label: "Galería" },
     { href: "#caracteristicas", label: "Características" },
   ],
   

@@ -10,7 +10,7 @@ export function Gallery() {
   const PROPOSAL_BADGE = "Propuesta de amueblado";
 
   return (
-    <section id="gallery" className="py-28 md:py-40 bg-muted">
+    <section id="galeria" className="py-28 md:py-40 bg-muted">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mb-20">
           <p className="eyebrow mb-4">05 — Galería</p>
