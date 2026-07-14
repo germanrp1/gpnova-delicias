@@ -439,6 +439,7 @@ export const project = {
         "Ejemplo de decoración mediante Home Staging Virtual.",
     },
 
+    
     {
       title: "Baño EnSuite",
 
