@@ -356,7 +356,7 @@ export const project = {
 
     {
       title: "Salón - Comedor",
-      subtitle: "Vista hacia la zona de estar",
+      subtitle: "Vista hacia la zona de estar y a la posible cuarta habitación",
 
       layout: "compare",
 
@@ -397,6 +397,7 @@ export const project = {
 
     {
       title: "Dormitorio 3",
+      subtitle: "Habitación principal con baño ensuite",
 
       layout: "compare",
 
@@ -439,7 +440,7 @@ export const project = {
     },
 
     {
-      title: "Baño secundario",
+      title: "Baño EnSuite",
 
       layout: "compare",
 
