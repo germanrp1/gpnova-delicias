@@ -410,7 +410,7 @@ export const project = {
 
     {
       title: "Dormitorio 4",
-      subtitle: "Espacio opcional",
+      subtitle: "Espacio del salón preparado para su transformación en la cuarta habitación",
 
       layout: "compare",
 
@@ -439,7 +439,7 @@ export const project = {
         "Ejemplo de decoración mediante Home Staging Virtual.",
     },
 
-    
+
     {
       title: "Baño EnSuite",
 
