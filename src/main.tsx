@@ -12,7 +12,7 @@ import { SmartSimulator } from "./components/landing/SmartSimulator";
 import { MortgageCalculator } from "./components/landing/MortgageCalculator";
 import { ProfitCalculator } from "./components/landing/ProfitCalculator";
 import { Project } from "./components/landing/Project";
-import { Gallery } from "./components/landing/Gallery_Old";
+import { Gallery } from "./components/landing/Gallery";
 import { Transformation } from "./components/landing/Transformation";
 import { Highlights } from "./components/landing/Highlights";
 import { LiveOrInvest } from "./components/landing/LiveOrInvest";

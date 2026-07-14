@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { project } from "@/data/project.config"; 
 
 //import fachada from "@/assets/Fachada.png";
-import fachada from "@/assets/Fachada_IA1.png";
-import plano from "@/assets/Plano-principal.png";
+import fachada from "@/assets/gallery/Fachada_IA1.png";
+import plano from "@/assets/gallery/Plano-principal.png";
 
 import {
   ZoomIn, X

@@ -1,4 +1,4 @@
-import mortgageSimulation from "@/assets/mortgage-simulation.jpg";
+//import mortgageSimulation from "@/assets/mortgage-simulation.jpg";
 
 export function Footer() {
   return (
@@ -44,14 +44,14 @@ export function Footer() {
                 .
               </span>
             </p>
-            <img
+            {/* <img
               src={mortgageSimulation}
               alt="Ejemplo de simulación de hipoteca bancaria"
               loading="lazy"
               width={1318}
               height={1195}
               className="w-full sm:w-[28rem] rounded-lg border border-border"
-            />
+            /> */}
           </div>
         </div>
       </div>

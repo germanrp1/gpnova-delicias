@@ -13,6 +13,50 @@ import {
 
 } from "lucide-react";
 
+// Importamos imágenes para el Gallery y cualquier otro apartado
+// ============================
+// FACHADA
+// ============================
+
+import Fachada from "@/assets/gallery/Fachada.png";
+import FachadaIA from "@/assets/gallery/Fachada_IA1.png";
+
+// ============================
+// SALÓN
+// ============================
+
+import SalonCocina from "@/assets/gallery/Salon-Cocina.jpeg";
+import SalonCocinaIA from "@/assets/gallery/Salon-CocinaIA.jpeg";
+
+import SalonComedor from "@/assets/gallery/Salon-Comedor.png";
+import SalonComedorIA from "@/assets/gallery/Salon-ComedorIA.png";
+
+// ============================
+// DORMITORIOS
+// ============================
+
+import Hab1 from "@/assets/gallery/Hab1.jpeg";
+import Hab1IA from "@/assets/gallery/Hab1IA.jpeg";
+
+import Hab2 from "@/assets/gallery/Hab2.jpeg";
+import Hab2IA from "@/assets/gallery/Hab2IA.jpeg";
+
+import Hab3 from "@/assets/gallery/Hab3.png";
+import Hab3IA from "@/assets/gallery/Hab3IA.jpeg";
+
+import Hab4 from "@/assets/gallery/Hab4.jpeg";
+import Hab4IA from "@/assets/gallery/Hab4IA.png";
+
+// ============================
+// BAÑOS
+// ============================
+
+import Bano1 from "@/assets/gallery/Baño1.png";
+import Bano1IA from "@/assets/gallery/Baño1IA.jpeg";
+
+import Bano2 from "@/assets/gallery/Baño2.png";
+import Bano2IA from "@/assets/gallery/Baño2IA.jpeg";
+
 export const project = {
 
   id: "Delicias",
@@ -111,14 +155,14 @@ export const project = {
     purchasePrice: 295000,
 
     rooms: {
-        default: 3,
+        default: 4,
         optional: 4
     },
 
     rent: {
         min: 400,
         max: 650,
-        default: 450,
+        default: 500,
         step: 25
     },
 
@@ -275,6 +319,144 @@ export const project = {
     ],
     
   },
+  gallery: [
+
+    // ==========================================
+    // FACHADA
+    // ==========================================
+
+    {
+      title: "Fachada",
+      subtitle: "Vista exterior",
+
+      layout: "single",
+
+      image: FachadaIA,
+
+      caption:
+        "Edificio residencial situado en una calle tranquila del barrio de Las Delicias.",
+    },
+
+    // ==========================================
+    // SALÓN
+    // ==========================================
+
+    {
+      title: "Salón - Cocina",
+      subtitle: "Vista desde la entrada",
+
+      layout: "compare",
+
+      current: SalonCocina,
+      proposal: SalonCocinaIA,
+
+      note:
+        "Home Staging Virtual realizado sobre una fotografía real.",
+    },
+
+    {
+      title: "Salón - Comedor",
+      subtitle: "Vista hacia la zona de estar",
+
+      layout: "compare",
+
+      current: SalonComedor,
+      proposal: SalonComedorIA,
+
+      note:
+        "Home Staging Virtual realizado sobre una fotografía real.",
+    },
+
+    // ==========================================
+    // DORMITORIOS
+    // ==========================================
+
+    {
+      title: "Dormitorio 1",
+
+      layout: "compare",
+
+      current: Hab1,
+      proposal: Hab1IA,
+
+      note:
+        "Home Staging Virtual realizado sobre una fotografía real.",
+    },
+
+    {
+      title: "Dormitorio 2",
+
+      layout: "compare",
+
+      current: Hab2,
+      proposal: Hab2IA,
+
+      note:
+        "Home Staging Virtual realizado sobre una fotografía real.",
+    },
+
+    {
+      title: "Dormitorio 3",
+
+      layout: "compare",
+
+      current: Hab3,
+      proposal: Hab3IA,
+
+      note:
+        "Home Staging Virtual realizado sobre una fotografía real.",
+    },
+
+    {
+      title: "Dormitorio 4",
+      subtitle: "Espacio opcional",
+
+      layout: "compare",
+
+      current: Hab4,
+      proposal: Hab4IA,
+
+      note:
+        "Este espacio puede utilizarse como cuarto dormitorio, despacho o sala multifuncional.",
+    },
+
+    // ==========================================
+    // BAÑOS
+    // ==========================================
+
+    {
+      title: "Baño principal",
+
+      layout: "compare",
+
+      current: Bano1,
+      proposal: Bano1IA,
+
+      proposalBadge: "Propuesta de decoración",
+
+      note:
+        "Ejemplo de decoración mediante Home Staging Virtual.",
+    },
+
+    {
+      title: "Baño secundario",
+
+      layout: "compare",
+
+      current: Bano2,
+      proposal: Bano2IA,
+
+      proposalBadge: "Propuesta de decoración",
+
+      note:
+        "Ejemplo de decoración mediante Home Staging Virtual.",
+    },
+
+  ],
+
+
+
+  // Resto de apartados
 
   contact: {
     email: "gpnova.realestate@gmail.com",
