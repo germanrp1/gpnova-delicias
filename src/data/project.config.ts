@@ -25,8 +25,8 @@ import FachadaIA from "@/assets/gallery/Fachada_IA1.png";
 // SALÓN
 // ============================
 
-import SalonCocina from "@/assets/gallery/Salon-Cocina.jpeg";
-import SalonCocinaIA from "@/assets/gallery/Salon-CocinaIA.jpeg";
+import SalonCocina from "@/assets/gallery/Salon-Cocina.png";
+import SalonCocinaIA from "@/assets/gallery/Salon-CocinaIA.png";
 
 import SalonComedor from "@/assets/gallery/Salon-Comedor.png";
 import SalonComedorIA from "@/assets/gallery/Salon-ComedorIA.png";
